@@ -1,0 +1,21 @@
+                     star_brisk
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Star-Brisk1    72    25       34.72%        img1.jpg
+ Star-Brisk10    73    46       63.01%        img10.jpg
+ Star-Brisk2    76    75       98.68%        img2.jpg
+ Star-Brisk3    74    50       67.57%        img3.jpg
+ Star-Brisk4    67    41       61.19%        img4.jpg
+ Star-Brisk5    71    47       66.20%        img5.jpg
+ Star-Brisk6    74    35       47.30%        img6.jpg
+ Star-Brisk7    75    39       52.00%        img7.jpg
+ Star-Brisk8    69    41       59.42%        img8.jpg
+ Star-Brisk9    75    50       66.67%        img9.jpg
+
+
+Média dos matches:  125.640909091
+Desvio Padrão dos matches:  112.754210399
+Média dos corretos:  91.5818181818
+Desvio Padrão dos corretos:  85.9700668645
+Porcentagem em relação aos valores médios:  72.8917188235 %

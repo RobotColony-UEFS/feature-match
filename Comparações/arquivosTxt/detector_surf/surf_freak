@@ -1,0 +1,21 @@
+                     surf_freak
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Surf-Freak1    131    70       53.44%        img1.jpg
+ Surf-Freak10    132    104       78.79%        img10.jpg
+ Surf-Freak2    133    122       91.73%        img2.jpg
+ Surf-Freak3    133    98       73.68%        img3.jpg
+ Surf-Freak4    130    93       71.54%        img4.jpg
+ Surf-Freak5    134    100       74.63%        img5.jpg
+ Surf-Freak6    134    87       64.93%        img6.jpg
+ Surf-Freak7    134    107       79.85%        img7.jpg
+ Surf-Freak8    133    76       57.14%        img8.jpg
+ Surf-Freak9    132    107       81.06%        img9.jpg
+
+
+Média dos matches:  131.057142857
+Desvio Padrão dos matches:  109.829333281
+Média dos corretos:  92.4821428571
+Desvio Padrão dos corretos:  81.0689281395
+Porcentagem em relação aos valores médios:  70.5662742533 %

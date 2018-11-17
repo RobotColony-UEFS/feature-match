@@ -1,0 +1,21 @@
+                     shiTomasi_brief
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ ShiTomasi-Brief1    32    17       53.12%        img1.jpg
+ ShiTomasi-Brief10    35    28       80.00%        img10.jpg
+ ShiTomasi-Brief2    36    31       86.11%        img2.jpg
+ ShiTomasi-Brief3    36    28       77.78%        img3.jpg
+ ShiTomasi-Brief4    36    30       83.33%        img4.jpg
+ ShiTomasi-Brief5    38    30       78.95%        img5.jpg
+ ShiTomasi-Brief6    34    31       91.18%        img6.jpg
+ ShiTomasi-Brief7    32    28       87.50%        img7.jpg
+ ShiTomasi-Brief8    35    21       60.00%        img8.jpg
+ ShiTomasi-Brief9    35    33       94.29%        img9.jpg
+
+
+Média dos matches:  153.8
+Desvio Padrão dos matches:  120.328965756
+Média dos corretos:  112.3875
+Desvio Padrão dos corretos:  92.2959903991
+Porcentagem em relação aos valores médios:  73.0737971391 %

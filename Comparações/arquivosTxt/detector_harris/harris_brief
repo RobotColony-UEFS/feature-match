@@ -1,0 +1,21 @@
+                     harris_brief
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Harris-Brief1    23    9       39.13%        img1.jpg
+ Harris-Brief10    25    15       60.00%        img10.jpg
+ Harris-Brief2    25    23       92.00%        img2.jpg
+ Harris-Brief3    25    20       80.00%        img3.jpg
+ Harris-Brief4    24    10       41.67%        img4.jpg
+ Harris-Brief5    25    22       88.00%        img5.jpg
+ Harris-Brief6    24    18       75.00%        img6.jpg
+ Harris-Brief7    25    20       80.00%        img7.jpg
+ Harris-Brief8    24    11       45.83%        img8.jpg
+ Harris-Brief9    25    20       80.00%        img9.jpg
+
+
+Média dos matches:  248.45
+Desvio Padrão dos matches:  112.57300224
+Média dos corretos:  166.366666667
+Desvio Padrão dos corretos:  88.2231954886
+Porcentagem em relação aos valores médios:  66.9618300127 %

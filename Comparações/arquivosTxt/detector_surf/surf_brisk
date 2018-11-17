@@ -1,0 +1,21 @@
+                     surf_brisk
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Surf-Brisk1    241    103       42.74%        img1.jpg
+ Surf-Brisk10    239    135       56.49%        img10.jpg
+ Surf-Brisk2    242    207       85.54%        img2.jpg
+ Surf-Brisk3    240    169       70.42%        img3.jpg
+ Surf-Brisk4    239    133       55.65%        img4.jpg
+ Surf-Brisk5    236    159       67.37%        img5.jpg
+ Surf-Brisk6    242    150       61.98%        img6.jpg
+ Surf-Brisk7    241    163       67.63%        img7.jpg
+ Surf-Brisk8    242    113       46.69%        img8.jpg
+ Surf-Brisk9    241    160       66.39%        img9.jpg
+
+
+Média dos matches:  131.0
+Desvio Padrão dos matches:  111.844038236
+Média dos corretos:  92.337037037
+Desvio Padrão dos corretos:  82.5043731642
+Porcentagem em relação aos valores médios:  70.4862878145 %

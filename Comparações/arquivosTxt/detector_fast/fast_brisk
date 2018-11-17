@@ -1,0 +1,21 @@
+                     fast_brisk
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Fast-Brisk1    357    122       34.17%        img1.jpg
+ Fast-Brisk10    358    166       46.37%        img10.jpg
+ Fast-Brisk2    344    301       87.50%        img2.jpg
+ Fast-Brisk3    360    224       62.22%        img3.jpg
+ Fast-Brisk4    345    167       48.41%        img4.jpg
+ Fast-Brisk5    341    247       72.43%        img5.jpg
+ Fast-Brisk6    359    163       45.40%        img6.jpg
+ Fast-Brisk7    353    200       56.66%        img7.jpg
+ Fast-Brisk8    363    138       38.02%        img8.jpg
+ Fast-Brisk9    356    223       62.64%        img9.jpg
+
+
+Média dos matches:  305.8
+Desvio Padrão dos matches:  48.2385737766
+Média dos corretos:  189.3
+Desvio Padrão dos corretos:  51.3187100383
+Porcentagem em relação aos valores médios:  61.903204709 %

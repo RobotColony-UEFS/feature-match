@@ -1,0 +1,21 @@
+                     surf_orb
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Surf-Orb1    319    110       34.48%        img1.jpg
+ Surf-Orb10    324    158       48.77%        img10.jpg
+ Surf-Orb2    324    258       79.63%        img2.jpg
+ Surf-Orb3    330    189       57.27%        img3.jpg
+ Surf-Orb4    322    134       41.61%        img4.jpg
+ Surf-Orb5    322    174       54.04%        img5.jpg
+ Surf-Orb6    324    161       49.69%        img6.jpg
+ Surf-Orb7    326    178       54.60%        img7.jpg
+ Surf-Orb8    329    141       42.86%        img8.jpg
+ Surf-Orb9    327    182       55.66%        img9.jpg
+
+
+Média dos matches:  137.734482759
+Desvio Padrão dos matches:  113.557558779
+Média dos corretos:  95.1034482759
+Desvio Padrão dos corretos:  81.1612039252
+Porcentagem em relação aos valores médios:  69.0483939614 %

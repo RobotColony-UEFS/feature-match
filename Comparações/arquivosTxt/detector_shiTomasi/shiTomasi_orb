@@ -1,0 +1,21 @@
+                     shiTomasi_orb
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ ShiTomasi-Orb1    34    23       67.65%        img1.jpg
+ ShiTomasi-Orb10    32    23       71.88%        img10.jpg
+ ShiTomasi-Orb2    34    28       82.35%        img2.jpg
+ ShiTomasi-Orb3    38    30       78.95%        img3.jpg
+ ShiTomasi-Orb4    33    26       78.79%        img4.jpg
+ ShiTomasi-Orb5    34    28       82.35%        img5.jpg
+ ShiTomasi-Orb6    36    30       83.33%        img6.jpg
+ ShiTomasi-Orb7    30    27       90.00%        img7.jpg
+ ShiTomasi-Orb8    34    21       61.76%        img8.jpg
+ ShiTomasi-Orb9    34    28       82.35%        img9.jpg
+
+
+Média dos matches:  135.573684211
+Desvio Padrão dos matches:  118.187461897
+Média dos corretos:  99.3
+Desvio Padrão dos corretos:  89.9468819857
+Porcentagem em relação aos valores médios:  73.2443029621 %

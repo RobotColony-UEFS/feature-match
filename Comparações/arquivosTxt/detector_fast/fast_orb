@@ -1,0 +1,21 @@
+                     fast_orb
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Fast-Orb1    226    87       38.50%        img1.jpg
+ Fast-Orb10    228    109       47.81%        img10.jpg
+ Fast-Orb2    224    209       93.30%        img2.jpg
+ Fast-Orb3    228    207       90.79%        img3.jpg
+ Fast-Orb4    214    109       50.93%        img4.jpg
+ Fast-Orb5    215    167       77.67%        img5.jpg
+ Fast-Orb6    227    175       77.09%        img6.jpg
+ Fast-Orb7    226    172       76.11%        img7.jpg
+ Fast-Orb8    228    132       57.89%        img8.jpg
+ Fast-Orb9    228    193       84.65%        img9.jpg
+
+
+Média dos matches:  275.725
+Desvio Padrão dos matches:  47.9947848729
+Média dos corretos:  177.9
+Desvio Padrão dos corretos:  46.842715549
+Porcentagem em relação aos valores médios:  64.5208087769 %

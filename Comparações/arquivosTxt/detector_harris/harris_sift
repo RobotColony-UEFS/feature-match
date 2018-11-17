@@ -1,0 +1,21 @@
+                     harris_sift
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Harris-sift1    42    12       28.57%        img1.jpg
+ Harris-sift10    42    14       33.33%        img10.jpg
+ Harris-sift2    42    31       73.81%        img2.jpg
+ Harris-sift3    42    17       40.48%        img3.jpg
+ Harris-sift4    42    8       19.05%        img4.jpg
+ Harris-sift5    40    16       40.00%        img5.jpg
+ Harris-sift6    42    17       40.48%        img6.jpg
+ Harris-sift7    41    12       29.27%        img7.jpg
+ Harris-sift8    41    9       21.95%        img8.jpg
+ Harris-sift9    43    16       37.21%        img9.jpg
+
+
+Média dos matches:  161.68
+Desvio Padrão dos matches:  137.535223125
+Média dos corretos:  105.71
+Desvio Padrão dos corretos:  100.999732178
+Porcentagem em relação aos valores médios:  65.3822365166 %

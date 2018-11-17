@@ -1,0 +1,21 @@
+                     orb_orb
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Orb-orb1    250    219       87.60%        img1.jpg
+ Orb-orb10    226    209       92.48%        img10.jpg
+ Orb-orb2    267    247       92.51%        img2.jpg
+ Orb-orb3    253    229       90.51%        img3.jpg
+ Orb-orb4    242    206       85.12%        img4.jpg
+ Orb-orb5    234    218       93.16%        img5.jpg
+ Orb-orb6    253    230       90.91%        img6.jpg
+ Orb-orb7    248    212       85.48%        img7.jpg
+ Orb-orb8    240    224       93.33%        img8.jpg
+ Orb-orb9    233    219       93.99%        img9.jpg
+
+
+Média dos matches:  159.307142857
+Desvio Padrão dos matches:  123.960990202
+Média dos corretos:  114.771428571
+Desvio Padrão dos corretos:  94.9351164034
+Porcentagem em relação aos valores médios:  72.0441196252 %

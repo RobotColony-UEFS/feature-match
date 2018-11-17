@@ -1,0 +1,21 @@
+                     star_brief
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Star-Brief1    68    20       29.41%        img1.jpg
+ Star-Brief10    72    52       72.22%        img10.jpg
+ Star-Brief2    75    74       98.67%        img2.jpg
+ Star-Brief3    72    61       84.72%        img3.jpg
+ Star-Brief4    66    43       65.15%        img4.jpg
+ Star-Brief5    73    58       79.45%        img5.jpg
+ Star-Brief6    72    50       69.44%        img6.jpg
+ Star-Brief7    74    55       74.32%        img7.jpg
+ Star-Brief8    67    45       67.16%        img8.jpg
+ Star-Brief9    75    61       81.33%        img9.jpg
+
+
+Média dos matches:  128.166666667
+Desvio Padrão dos matches:  114.796407084
+Média dos corretos:  93.8047619048
+Desvio Padrão dos corretos:  87.3317428582
+Porcentagem em relação aos valores médios:  73.1896711871 %

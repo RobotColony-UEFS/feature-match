@@ -1,0 +1,21 @@
+                     shiTomasi_brisk
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ ShiTomasi-Brisk1    42    27       64.29%        img1.jpg
+ ShiTomasi-Brisk10    44    33       75.00%        img10.jpg
+ ShiTomasi-Brisk2    50    40       80.00%        img2.jpg
+ ShiTomasi-Brisk3    44    34       77.27%        img3.jpg
+ ShiTomasi-Brisk4    42    32       76.19%        img4.jpg
+ ShiTomasi-Brisk5    47    36       76.60%        img5.jpg
+ ShiTomasi-Brisk6    43    32       74.42%        img6.jpg
+ ShiTomasi-Brisk7    42    34       80.95%        img7.jpg
+ ShiTomasi-Brisk8    39    23       58.97%        img8.jpg
+ ShiTomasi-Brisk9    45    37       82.22%        img9.jpg
+
+
+Média dos matches:  147.329411765
+Desvio Padrão dos matches:  119.573151446
+Média dos corretos:  107.705882353
+Desvio Padrão dos corretos:  91.4844022102
+Porcentagem em relação aos valores médios:  73.1054859059 %

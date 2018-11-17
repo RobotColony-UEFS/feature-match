@@ -1,0 +1,21 @@
+                     orb_brief
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Orb-Brief1    146    109       74.66%        img1.jpg
+ Orb-Brief10    162    147       90.74%        img10.jpg
+ Orb-Brief2    213    198       92.96%        img2.jpg
+ Orb-Brief3    206    190       92.23%        img3.jpg
+ Orb-Brief4    161    140       86.96%        img4.jpg
+ Orb-Brief5    181    170       93.92%        img5.jpg
+ Orb-Brief6    203    183       90.15%        img6.jpg
+ Orb-Brief7    198    163       82.32%        img7.jpg
+ Orb-Brief8    205    192       93.66%        img8.jpg
+ Orb-Brief9    199    186       93.47%        img9.jpg
+
+
+Média dos matches:  164.018181818
+Desvio Padrão dos matches:  131.51239014
+Média dos corretos:  111.354545455
+Desvio Padrão dos corretos:  98.2753632646
+Porcentagem em relação aos valores médios:  67.8915862986 %

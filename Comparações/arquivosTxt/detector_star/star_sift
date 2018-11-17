@@ -1,0 +1,21 @@
+                     star_sift
+
+  Nome----Matches---Corretos---Porcentagem---ImgAssociada
+
+ Star-Sift1    59    34       57.63%        img1.jpg
+ Star-Sift10    70    51       72.86%        img10.jpg
+ Star-Sift2    75    74       98.67%        img2.jpg
+ Star-Sift3    68    62       91.18%        img3.jpg
+ Star-Sift4    70    50       71.43%        img4.jpg
+ Star-Sift5    73    61       83.56%        img5.jpg
+ Star-Sift6    75    57       76.00%        img6.jpg
+ Star-Sift7    72    49       68.06%        img7.jpg
+ Star-Sift8    67    55       82.09%        img8.jpg
+ Star-Sift9    72    61       84.72%        img9.jpg
+
+
+Média dos matches:  119.164
+Desvio Padrão dos matches:  107.224479966
+Média dos corretos:  86.604
+Desvio Padrão dos corretos:  81.8597775712
+Porcentagem em relação aos valores médios:  72.6763116377 %
