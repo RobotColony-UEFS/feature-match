@@ -2,20 +2,20 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Orb-sift1    170    136       80.00%        img1.jpg
- Orb-sift10    180    156       86.67%        img10.jpg
- Orb-sift2    207    171       82.61%        img2.jpg
- Orb-sift3    206    162       78.64%        img3.jpg
- Orb-sift4    195    154       78.97%        img4.jpg
- Orb-sift5    199    181       90.95%        img5.jpg
- Orb-sift6    204    166       81.37%        img6.jpg
- Orb-sift7    218    177       81.19%        img7.jpg
- Orb-sift8    174    149       85.63%        img8.jpg
- Orb-sift9    203    185       91.13%        img9.jpg
+ Orb-sift1    171    137       80.12%        img1.jpg
+ Orb-sift10    181    159       87.85%        img10.jpg
+ Orb-sift2    206    170       82.52%        img2.jpg
+ Orb-sift3    207    162       78.26%        img3.jpg
+ Orb-sift4    200    158       79.00%        img4.jpg
+ Orb-sift5    204    184       90.20%        img5.jpg
+ Orb-sift6    203    164       80.79%        img6.jpg
+ Orb-sift7    216    175       81.02%        img7.jpg
+ Orb-sift8    173    148       85.55%        img8.jpg
+ Orb-sift9    200    186       93.00%        img9.jpg
 
 
-Média dos matches:  161.726666667
-Desvio Padrão dos matches:  120.16160766
-Média dos corretos:  118.033333333
-Desvio Padrão dos corretos:  92.6011818979
-Porcentagem em relação aos valores médios:  72.9832227215 %
+Média dos matches:  196.1
+Desvio Padrão dos matches:  14.6454771175
+Média dos corretos:  164.3
+Desvio Padrão dos corretos:  14.4571781479
+Porcentagem em relação aos valores médios:  83.7837837838 %

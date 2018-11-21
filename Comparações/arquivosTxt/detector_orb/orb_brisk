@@ -2,20 +2,20 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Orb-Brisk1    141    118       83.69%        img1.jpg
- Orb-Brisk10    152    138       90.79%        img10.jpg
- Orb-Brisk2    169    152       89.94%        img2.jpg
- Orb-Brisk3    153    137       89.54%        img3.jpg
- Orb-Brisk4    143    114       79.72%        img4.jpg
- Orb-Brisk5    145    136       93.79%        img5.jpg
- Orb-Brisk6    148    127       85.81%        img6.jpg
- Orb-Brisk7    165    143       86.67%        img7.jpg
+ Orb-Brisk1    142    118       83.10%        img1.jpg
+ Orb-Brisk10    154    140       90.91%        img10.jpg
+ Orb-Brisk2    167    151       90.42%        img2.jpg
+ Orb-Brisk3    151    135       89.40%        img3.jpg
+ Orb-Brisk4    142    114       80.28%        img4.jpg
+ Orb-Brisk5    143    134       93.71%        img5.jpg
+ Orb-Brisk6    151    129       85.43%        img6.jpg
+ Orb-Brisk7    163    140       85.89%        img7.jpg
  Orb-Brisk8    157    139       88.54%        img8.jpg
- Orb-Brisk9    157    139       88.54%        img9.jpg
+ Orb-Brisk9    157    141       89.81%        img9.jpg
 
 
-Média dos matches:  163.1
-Desvio Padrão dos matches:  125.975685485
-Média dos corretos:  113.266666667
-Desvio Padrão dos corretos:  94.3574527469
-Porcentagem em relação aos valores médios:  69.4461475577 %
+Média dos matches:  152.7
+Desvio Padrão dos matches:  8.23468275042
+Média dos corretos:  134.1
+Desvio Padrão dos corretos:  10.5683489723
+Porcentagem em relação aos valores médios:  87.8192534381 %

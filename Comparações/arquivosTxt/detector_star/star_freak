@@ -2,20 +2,20 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Star-Freak1    71    34       47.89%        img1.jpg
- Star-Freak10    70    50       71.43%        img10.jpg
- Star-Freak2    74    68       91.89%        img2.jpg
- Star-Freak3    72    54       75.00%        img3.jpg
- Star-Freak4    66    42       63.64%        img4.jpg
- Star-Freak5    71    50       70.42%        img5.jpg
- Star-Freak6    73    41       56.16%        img6.jpg
- Star-Freak7    73    43       58.90%        img7.jpg
- Star-Freak8    68    47       69.12%        img8.jpg
- Star-Freak9    72    52       72.22%        img9.jpg
+ star_freak1    69    34       49.28%        img1.jpg
+ star_freak10    71    56       78.87%        img10.jpg
+ star_freak2    75    69       92.00%        img2.jpg
+ star_freak3    70    51       72.86%        img3.jpg
+ star_freak4    67    42       62.69%        img4.jpg
+ star_freak5    72    50       69.44%        img5.jpg
+ star_freak6    74    41       55.41%        img6.jpg
+ star_freak7    74    47       63.51%        img7.jpg
+ star_freak8    67    46       68.66%        img8.jpg
+ star_freak9    71    45       63.38%        img9.jpg
 
 
-Média dos matches:  123.265217391
-Desvio Padrão dos matches:  110.838402185
-Média dos corretos:  89.6913043478
-Desvio Padrão dos corretos:  84.5663897315
-Porcentagem em relação aos valores médios:  72.7628655074 %
+Média dos matches:  71.0
+Desvio Padrão dos matches:  2.683281573
+Média dos corretos:  48.1
+Desvio Padrão dos corretos:  9.01609671643
+Porcentagem em relação aos valores médios:  67.7464788732 %

@@ -2,20 +2,20 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- ShiTomasi-Freak1    40    27       67.50%        img1.jpg
- ShiTomasi-Freak10    34    26       76.47%        img10.jpg
- ShiTomasi-Freak2    42    35       83.33%        img2.jpg
- ShiTomasi-Freak3    38    31       81.58%        img3.jpg
- ShiTomasi-Freak4    35    26       74.29%        img4.jpg
- ShiTomasi-Freak5    34    29       85.29%        img5.jpg
- ShiTomasi-Freak6    40    33       82.50%        img6.jpg
- ShiTomasi-Freak7    36    32       88.89%        img7.jpg
- ShiTomasi-Freak8    38    22       57.89%        img8.jpg
- ShiTomasi-Freak9    37    32       86.49%        img9.jpg
+ ShiTomasi-Freak1    39    28       71.79%        img1.jpg
+ ShiTomasi-Freak10    35    30       85.71%        img10.jpg
+ ShiTomasi-Freak2    41    34       82.93%        img2.jpg
+ ShiTomasi-Freak3    38    28       73.68%        img3.jpg
+ ShiTomasi-Freak4    35    27       77.14%        img4.jpg
+ ShiTomasi-Freak5    38    31       81.58%        img5.jpg
+ ShiTomasi-Freak6    39    33       84.62%        img6.jpg
+ ShiTomasi-Freak7    34    32       94.12%        img7.jpg
+ ShiTomasi-Freak8    36    25       69.44%        img8.jpg
+ ShiTomasi-Freak9    40    32       80.00%        img9.jpg
 
 
-Média dos matches:  141.222222222
-Desvio Padrão dos matches:  118.902693903
-Média dos corretos:  103.35
-Desvio Padrão dos corretos:  90.7071279203
-Porcentagem em relação aos valores médios:  73.1825334382 %
+Média dos matches:  37.5
+Desvio Padrão dos matches:  2.24722050542
+Média dos corretos:  30.0
+Desvio Padrão dos corretos:  2.75680975042
+Porcentagem em relação aos valores médios:  80.0 %

@@ -1,5 +1,12 @@
 create database referencias;
-use referencias; 
+use referencias;
+
+-- fast
+-- harris
+-- orb
+-- shiTomasi
+-- star
+-- surf
 
 CREATE TABLE surf_brief(
 Nome varchar(30) not null,
@@ -46,5 +53,15 @@ rastreio boolean,
 primary key (Nome)
 );
 
+CREATE TABLE medias_desvios (
+Nome varchar(30) not null,
+MediaMatches float(30) not null,
+DesvioMatches float(30) not null,
+MediaCorretos float(30) not null,
+DesvioCorretos float(30) not null,
+Porcentagem float(30) not null,
+primary key(Nome)
+);
+
 select *from fast_brisk;
-truncate fast_brief;
+

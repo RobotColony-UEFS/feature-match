@@ -2,6 +2,7 @@
 import cv2
 import numpy as np
 import mysql.connector
+import math
 
 mydb = mysql.connector.connect(
   host="localhost",
@@ -10,7 +11,22 @@ mydb = mysql.connector.connect(
   database="referencias"
 )
 
-img11 = cv2.imread("/home/samuel/Algoritmos_tcc/Comparações/imgReferencia/img00.jpg", 0)
+def desvio (vetResult):
+	# Desvio padrão populacional
+	soma = float(sum(vetResult))
+	media = soma/len(vetResult)
+	res = 0
+	for valor in vetResult:
+		res += ((valor - media)**2)
+
+	desvio = (math.sqrt(res/len(vetResult)))
+	return (media, desvio)
+
+
+vet_matches = []
+vet_corretos = []
+
+img11 = cv2.imread("../../imgReferencia/img00.jpg", 0)
 altura = img11.shape[0]
 largura = img11.shape[1]
 img1 = cv2.resize(img11, (int(largura*0.4), int(altura*0.4)))
@@ -34,12 +50,12 @@ for variavel in corners1:
 kp1=cv2.KeyPoint_convert(matriz1)
 kp1, des1 = orb.compute(img1, kp1)
 
-bf = cv2.BFMatcher_create(cv2.NORM_HAMMING, crossCheck=True)
+bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 quantidadeImagens = 1
 while(quantidadeImagens<=10):
 	#PARA IMAGEM 2
 	acertos = 0
-	img22 = cv2.imread("../imgTeste/img"+str(quantidadeImagens)+".jpg", 0)	
+	img22 = cv2.imread("../../imgTeste/img"+str(quantidadeImagens)+".jpg", 0)	
 	altura2 = img22.shape[0]
 	largura2 = img22.shape[1]
 	img2 = cv2.resize(img22, (int(largura2*0.4), int(altura2*0.4)))
@@ -61,7 +77,7 @@ while(quantidadeImagens<=10):
 	matches = bf.match(des1,des2)
 	matches = sorted(matches, key = lambda x:x.distance)
 	
-	with open("../imgTeste/img"+str(quantidadeImagens)+".txt",'r') as f:
+	with open("../../imgTeste/img"+str(quantidadeImagens)+".txt",'r') as f:
 		texto=f.readlines()
 	posicao_x= np.float_(texto[0:4])
 	posicao_y = np.float_(texto[4:8])
@@ -84,6 +100,8 @@ while(quantidadeImagens<=10):
 
 	img3 = cv2.drawMatches(img1,kp1,img2,kp2,matches[:],None,flags=2)
 	cv2.imwrite("../resultados/harris-orb/img"+str(quantidadeImagens)+".jpg", img3)
+	vet_matches.append(len(matches))
+	vet_corretos.append(acertos)
 	mycursor = mydb.cursor()
 	sql = "INSERT INTO harris_orb(Nome, Matches, Correto, ImgReferente) VALUES (%s, %s, %s, %s)"
 	valor = ("Harris-orb"+str(quantidadeImagens), len(matches), acertos, "img"+str(quantidadeImagens)+".jpg")
@@ -91,3 +109,12 @@ while(quantidadeImagens<=10):
 	mydb.commit()
 	print(len(matches), acertos)
 	quantidadeImagens+=1
+
+
+media_matches, desvio_matches = desvio(vet_matches)
+media_corretos, desvio_corretos = desvio(vet_corretos)
+porcentagem  = (media_corretos/media_matches)*100
+sql2 = "INSERT INTO medias_desvios(Nome, MediaMatches, DesvioMatches, MediaCorretos, DesvioCorretos, Porcentagem) VALUES (%s, %s, %s, %s, %s, %s)"
+valor2 = ("harris_orb", media_matches, desvio_matches, media_corretos, desvio_corretos, porcentagem)
+mycursor.execute(sql2, valor2)
+mydb.commit()
