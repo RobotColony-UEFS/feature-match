@@ -2,6 +2,8 @@
 # kernprof -l -v soa.py ls >> ArquivosTxt/arquivo2.txt
 # python -m memory_profiler soa.py ls >> ArquivosTxt/arquivo2.txt
 
+# Teste realizado para apenas uma imagem
+
 detectores=("FAST" "HARRIS" "ORB" "SHITOMASI" "STAR" "SURF")
 descritores=("brief" "brisk" "freak" "orb" "sift")
 
