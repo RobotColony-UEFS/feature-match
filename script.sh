@@ -20,8 +20,8 @@ for detect in ${detectores[@]};
 			   			# echo "$algoritmo"".py"
 		   			endTxt="ArquivosTxt/""$detect/"$algoritmo/"img""$nImg/"teste$cont.txt""	
 					echo $endTxt			   			
-					python -m memory_profiler "$detect/""$algoritmo"".py" "$nImg" ls >> $endTxt
-		   			kernprof -l -v "$detect/""$algoritmo"".py" "$nImg" ls >> $endTxt 
+					# python -m memory_profiler "$detect/""$algoritmo"".py" "$nImg" ls >> $endTxt
+		   			# kernprof -l -v "$detect/""$algoritmo"".py" "$nImg" ls >> $endTxt 
 		   			cont=$(($cont+1))
 	   			done
  				nImg=$(($nImg+1))
