@@ -1,6 +1,6 @@
 Devido a grande quantidade de imagens produzidas mediante o teste de precisão, as mesmas foram disponibilizadas no seguinte endereço: 
 
-https://drive.google.com/drive/folders/1oRtAY-4P5U1LySX79lRfVpEIPGysgXwr?usp=sharing
+https://drive.google.com/drive/folders/1DFOd4i_Z-PKyd0T6bAqXEjPKusNeIE5R?usp=sharing
 
 Onde, cada junção de algoritmo testado contém uma determinada pasta com suas respectivas imagens geradas.
 
