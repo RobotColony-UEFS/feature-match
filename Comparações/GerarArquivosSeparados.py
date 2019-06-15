@@ -3,8 +3,9 @@
 import mysql.connector
 import math
 
+# A partir deste script será possível realizar a criação de arquivos de textos relacionado aos dados de precisão dos algoritmos
 def escrever(result, detector, nomeSalvar, dadosComputados):
-	arquivo = open("Comparações/arquivosTxt/detector_"+detector+"/"+nomeSalvar,'w')
+	arquivo = open("arquivosTxt/detector_"+detector+"/"+nomeSalvar,'w')
 	arquivo.write("                     "+nomeSalvar)
 	arquivo.write("\n\n")
 	arquivo.write("  Nome----Matches---Corretos---Porcentagem---ImgAssociada\n")

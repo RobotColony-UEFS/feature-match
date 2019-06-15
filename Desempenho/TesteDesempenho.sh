@@ -15,7 +15,7 @@ for detect in ${detectores[@]};
 	   			while [ $cont -ne 11 ]; do
 					algoritmo="$detect"_"$desc"
 
-		   			endTxt="ArquivosTxt/""$detect/"$algoritmo/"img""$nImg/"teste$cont.txt""	
+		   			endTxt="Arquivos_Desempenho/""$detect/"$algoritmo/"img""$nImg/"teste$cont.txt""	
 					echo $endTxt			   			
 					python -m memory_profiler "$detect/""$algoritmo"".py" "$nImg" ls >> $endTxt
 		   			kernprof -l -v "$detect/""$algoritmo"".py" "$nImg" ls >> $endTxt 
