@@ -1,0 +1,52 @@
+Filename: SHITOMASI_orb.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.547 MiB   48.547 MiB   @profile
+     8                             def SHITOMASI_orb(img):
+     9   49.445 MiB    0.898 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10   50.664 MiB    1.219 MiB   	corners11 = cv2.goodFeaturesToTrack(img1, 100, 0.01, 10)
+    11   50.664 MiB    0.000 MiB   	corners1 = np.int0(corners11)
+    12   50.754 MiB    0.090 MiB   	kp1 = cv2.KeyPoint_convert(corners1)
+    13                             
+    14   50.875 MiB    0.121 MiB   	orb = cv2.ORB_create()
+    15   50.938 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    16   51.305 MiB    0.367 MiB   	kp1, des1 = orb.compute(img1, kp1)
+    17   51.887 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    18                             	
+    19   51.984 MiB    0.098 MiB   	corners22 = cv2.goodFeaturesToTrack(img2, 100, 0.01, 10)
+    20   51.984 MiB    0.000 MiB   	corners2 = np.int0(corners22)
+    21   51.984 MiB    0.000 MiB   	kp2 = cv2.KeyPoint_convert(corners2)
+    22   51.988 MiB    0.004 MiB   	kp2, des2 = orb.compute(img2, kp2)
+    23                             
+    24   52.211 MiB    0.223 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to SHITOMASI_orb.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 1.26502 s
+File: SHITOMASI_orb.py
+Function: SHITOMASI_orb at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def SHITOMASI_orb(img):
+     9         1      17301.0  17301.0      1.4  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10         1     122250.0 122250.0      9.7  	corners11 = cv2.goodFeaturesToTrack(img1, 100, 0.01, 10)
+    11         1        218.0    218.0      0.0  	corners1 = np.int0(corners11)
+    12         1       4045.0   4045.0      0.3  	kp1 = cv2.KeyPoint_convert(corners1)
+    13                                           
+    14         1        311.0    311.0      0.0  	orb = cv2.ORB_create()
+    15         1        236.0    236.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    16         1      17732.0  17732.0      1.4  	kp1, des1 = orb.compute(img1, kp1)
+    17         1      76573.0  76573.0      6.1  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    18                                           	
+    19         1     901107.0 901107.0     71.2  	corners22 = cv2.goodFeaturesToTrack(img2, 100, 0.01, 10)
+    20         1        224.0    224.0      0.0  	corners2 = np.int0(corners22)
+    21         1       5195.0   5195.0      0.4  	kp2 = cv2.KeyPoint_convert(corners2)
+    22         1     114832.0 114832.0      9.1  	kp2, des2 = orb.compute(img2, kp2)
+    23                                           
+    24         1       4992.0   4992.0      0.4  	matches = bf.match(des1,des2)
+

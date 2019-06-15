@@ -1,0 +1,52 @@
+Filename: SHITOMASI_freak.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.754 MiB   48.754 MiB   @profile
+     8                             def SHITOMASI_freak(img):
+     9   49.586 MiB    0.832 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10   50.738 MiB    1.152 MiB   	corners11 = cv2.goodFeaturesToTrack(img1, 100, 0.01, 10)
+    11   50.738 MiB    0.000 MiB   	corners1 = np.int0(corners11)
+    12   50.836 MiB    0.098 MiB   	kp1 = cv2.KeyPoint_convert(corners1)
+    13                             
+    14   50.898 MiB    0.062 MiB   	freak = cv2.xfeatures2d.FREAK_create()
+    15   50.961 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    16   59.695 MiB    8.734 MiB   	kp1, des1 = freak.compute(img1, kp1)
+    17   60.277 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    18                             	
+    19   60.277 MiB    0.000 MiB   	corners22 = cv2.goodFeaturesToTrack(img2, 100, 0.01, 10)
+    20   60.277 MiB    0.000 MiB   	corners2 = np.int0(corners22)
+    21   60.277 MiB    0.000 MiB   	kp2 = cv2.KeyPoint_convert(corners2)
+    22   60.281 MiB    0.004 MiB   	kp2, des2 = freak.compute(img2, kp2)
+    23                             
+    24   60.578 MiB    0.297 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to SHITOMASI_freak.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 2.07228 s
+File: SHITOMASI_freak.py
+Function: SHITOMASI_freak at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def SHITOMASI_freak(img):
+     9         1      16960.0  16960.0      0.8  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10         1     116892.0 116892.0      5.6  	corners11 = cv2.goodFeaturesToTrack(img1, 100, 0.01, 10)
+    11         1        222.0    222.0      0.0  	corners1 = np.int0(corners11)
+    12         1       3754.0   3754.0      0.2  	kp1 = cv2.KeyPoint_convert(corners1)
+    13                                           
+    14         1        335.0    335.0      0.0  	freak = cv2.xfeatures2d.FREAK_create()
+    15         1        239.0    239.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    16         1     854183.0 854183.0     41.2  	kp1, des1 = freak.compute(img1, kp1)
+    17         1      79150.0  79150.0      3.8  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    18                                           	
+    19         1     942704.0 942704.0     45.5  	corners22 = cv2.goodFeaturesToTrack(img2, 100, 0.01, 10)
+    20         1        228.0    228.0      0.0  	corners2 = np.int0(corners22)
+    21         1       3583.0   3583.0      0.2  	kp2 = cv2.KeyPoint_convert(corners2)
+    22         1      46961.0  46961.0      2.3  	kp2, des2 = freak.compute(img2, kp2)
+    23                                           
+    24         1       7072.0   7072.0      0.3  	matches = bf.match(des1,des2)
+

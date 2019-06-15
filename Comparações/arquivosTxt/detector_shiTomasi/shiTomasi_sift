@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- ShiTomasi-Sift1    51    27       52.94%        img1.jpg
- ShiTomasi-Sift10    35    25       71.43%        img10.jpg
- ShiTomasi-Sift2    50    37       74.00%        img2.jpg
- ShiTomasi-Sift3    46    38       82.61%        img3.jpg
- ShiTomasi-Sift4    42    31       73.81%        img4.jpg
- ShiTomasi-Sift5    47    32       68.09%        img5.jpg
- ShiTomasi-Sift6    45    30       66.67%        img6.jpg
- ShiTomasi-Sift7    42    34       80.95%        img7.jpg
- ShiTomasi-Sift8    40    23       57.50%        img8.jpg
- ShiTomasi-Sift9    44    36       81.82%        img9.jpg
+ ShiTomasi-Sift1    43    30       69.77%        img1.jpg
+ ShiTomasi-Sift10    48    34       70.83%        img10.jpg
+ ShiTomasi-Sift11    42    31       73.81%        img11.jpg
+ ShiTomasi-Sift12    43    33       76.74%        img12.jpg
+ ShiTomasi-Sift13    44    30       68.18%        img13.jpg
+ ShiTomasi-Sift2    48    35       72.92%        img2.jpg
+ ShiTomasi-Sift3    57    33       57.89%        img3.jpg
+ ShiTomasi-Sift4    50    34       68.00%        img4.jpg
+ ShiTomasi-Sift5    51    36       70.59%        img5.jpg
+ ShiTomasi-Sift6    55    38       69.09%        img6.jpg
+ ShiTomasi-Sift7    58    42       72.41%        img7.jpg
+ ShiTomasi-Sift8    48    32       66.67%        img8.jpg
+ ShiTomasi-Sift9    43    26       60.47%        img9.jpg
 
 
-Média dos matches:  44.2
-Desvio Padrão dos matches:  4.51220566907
-Média dos corretos:  31.3
-Desvio Padrão dos corretos:  4.8590122453
-Porcentagem em relação aos valores médios:  70.814479638 %
+Média dos matches:  48.4615384615
+Média dos corretos:  33.3846153846
+Desvio Padrão dos corretos:  3.83382639827
+Porcentagem em relação aos valores médios:  68.8888888889 %

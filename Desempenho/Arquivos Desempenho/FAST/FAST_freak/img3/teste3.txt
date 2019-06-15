@@ -1,0 +1,48 @@
+Filename: FAST_freak.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.562 MiB   48.562 MiB   @profile
+     8                             def FAST_freak(img):
+     9   49.258 MiB    0.695 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.320 MiB    0.062 MiB   	fast = cv2.FastFeatureDetector_create(threshold=25)
+    12   49.434 MiB    0.113 MiB   	freak = cv2.xfeatures2d.FREAK_create()
+    13   49.555 MiB    0.121 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   49.828 MiB    0.273 MiB   	kp1 = fast.detect(img1,None)
+    16   58.484 MiB    8.656 MiB   	kp1, des1 = freak.compute(img1, kp1)
+    17                             
+    18   59.066 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             
+    20   59.105 MiB    0.039 MiB   	kp2 = fast.detect(img2,None)
+    21   59.168 MiB    0.062 MiB   	kp2, des2 = freak.compute(img2, kp2)
+    22   59.621 MiB    0.453 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to FAST_freak.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 2.42708 s
+File: FAST_freak.py
+Function: FAST_freak at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def FAST_freak(img):
+     9         1      18117.0  18117.0      0.7  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        253.0    253.0      0.0  	fast = cv2.FastFeatureDetector_create(threshold=25)
+    12         1        366.0    366.0      0.0  	freak = cv2.xfeatures2d.FREAK_create()
+    13         1        215.0    215.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1      10977.0  10977.0      0.5  	kp1 = fast.detect(img1,None)
+    16         1     920395.0 920395.0     37.9  	kp1, des1 = freak.compute(img1, kp1)
+    17                                           
+    18         1      80504.0  80504.0      3.3  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           
+    20         1      45335.0  45335.0      1.9  	kp2 = fast.detect(img2,None)
+    21         1     270666.0 270666.0     11.2  	kp2, des2 = freak.compute(img2, kp2)
+    22         1    1080254.0 1080254.0     44.5  	matches = bf.match(des1,des2)
+

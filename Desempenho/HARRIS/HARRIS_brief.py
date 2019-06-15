@@ -1,9 +1,10 @@
 #coding: utf-8
 import cv2
 import numpy as np
+import sys
 
 @profile
-def HARRIS_brief():
+def HARRIS_brief(img):
 	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
 	brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()
 
@@ -22,10 +23,9 @@ def HARRIS_brief():
 	kp1=cv2.KeyPoint_convert(matriz1)
 	kp1, des1 = brief.compute(img1, kp1)
 
-
 	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 
-	img2 = cv2.imread("../imgTeste/img1.jpg", 0)	
+	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
 	imagem2 = np.float32(img2)
 	dst2 = cv2.cornerHarris(imagem2,2,3,0.04)
 	dst2 = cv2.dilate(dst2,None)
@@ -44,4 +44,5 @@ def HARRIS_brief():
 	matches = bf.match(des1,des2)
 
 if __name__ == '__main__':
-	HARRIS_brief()
+	imgNumero = sys.argv[1]
+	HARRIS_brief(imgNumero)

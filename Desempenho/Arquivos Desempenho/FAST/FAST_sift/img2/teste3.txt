@@ -1,0 +1,48 @@
+Filename: FAST_sift.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.598 MiB   48.598 MiB   @profile
+     8                             def FAST_sift(img):
+     9   49.441 MiB    0.844 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.504 MiB    0.062 MiB   	fast = cv2.FastFeatureDetector_create(threshold=25)
+    12   49.625 MiB    0.121 MiB   	sift = cv2.xfeatures2d.SIFT_create()
+    13   49.746 MiB    0.121 MiB   	bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+    14                             
+    15   50.082 MiB    0.336 MiB   	kp1 = fast.detect(img1,None)
+    16   54.844 MiB    4.762 MiB   	kp1, des1 = sift.compute(img1, kp1)
+    17                             
+    18   54.844 MiB    0.000 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             
+    20   54.883 MiB    0.039 MiB   	kp2 = fast.detect(img2,None)
+    21   55.770 MiB    0.887 MiB   	kp2, des2 = sift.compute(img2, kp2)
+    22   56.121 MiB    0.352 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to FAST_sift.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 18.5648 s
+File: FAST_sift.py
+Function: FAST_sift at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def FAST_sift(img):
+     9         1      17324.0  17324.0      0.1  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        371.0    371.0      0.0  	fast = cv2.FastFeatureDetector_create(threshold=25)
+    12         1        289.0    289.0      0.0  	sift = cv2.xfeatures2d.SIFT_create()
+    13         1        228.0    228.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+    14                                           
+    15         1      11708.0  11708.0      0.1  	kp1 = fast.detect(img1,None)
+    16         1    3063448.0 3063448.0     16.5  	kp1, des1 = sift.compute(img1, kp1)
+    17                                           
+    18         1      73529.0  73529.0      0.4  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           
+    20         1      47383.0  47383.0      0.3  	kp2 = fast.detect(img2,None)
+    21         1    9024912.0 9024912.0     48.6  	kp2, des2 = sift.compute(img2, kp2)
+    22         1    6325644.0 6325644.0     34.1  	matches = bf.match(des1,des2)
+

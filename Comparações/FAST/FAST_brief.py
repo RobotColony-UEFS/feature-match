@@ -32,7 +32,6 @@ img11 = cv2.imread("../../imgReferencia/img00.jpg", 0)
 altura = img11.shape[0]
 largura = img11.shape[1]
 img1 = cv2.resize(img11, (int(largura*0.4), int(altura*0.4)))
-img_dir = "../../imgTeste/"
 quantidadeImagens=1
 
 fast = cv2.FastFeatureDetector_create(threshold=20)
@@ -42,7 +41,7 @@ bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 kp1 = fast.detect(img1,None)
 kp1, des1 = brief.compute(img1, kp1)
 
-while(quantidadeImagens<=10):
+while(quantidadeImagens<=13):
 	acertos = 0
 	img22 = cv2.imread("../../imgTeste/img"+str(quantidadeImagens)+".jpg", 0)
 	altura2 = img22.shape[0]
@@ -53,9 +52,10 @@ while(quantidadeImagens<=10):
 	kp2 = fast.detect(img2,None)
 	kp2, des2 = brief.compute(img2, kp2)
 
-	matches = bf.match(des1,des2)
-	matches = sorted(matches, key = lambda x:x.distance)
-
+	mat = bf.match(des1,des2)
+	mat = sorted(mat, key = lambda x:x.distance)
+	matches = mat[0:150]
+	
 	with open("../../imgTeste/img"+str(quantidadeImagens)+".txt",'r') as f:
 		texto=f.readlines()
 	posicao_x= np.float_(texto[0:4])

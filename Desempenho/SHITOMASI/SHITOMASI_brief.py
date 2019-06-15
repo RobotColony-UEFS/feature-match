@@ -3,11 +3,13 @@
 import cv2
 import numpy as np
 
-@profile
+# @profile
 def SHITOMASI_brief():
-	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+	img1 = cv2.imread("../imgReferencia/img00.jpg")
+	gray = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 
-	corners11 = cv2.goodFeaturesToTrack(img1, 100, 0.01, 10)
+
+	corners11 = cv2.goodFeaturesToTrack(gray, 100, 0.01, 10)
 	corners1 = np.int0(corners11)
 	kp1 = cv2.KeyPoint_convert(corners1)
 

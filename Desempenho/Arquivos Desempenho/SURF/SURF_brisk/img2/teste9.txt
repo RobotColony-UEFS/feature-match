@@ -1,0 +1,50 @@
+[ INFO:0] Initialize OpenCL runtime...
+Filename: SURF_brisk.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.902 MiB   48.902 MiB   @profile
+     8                             def SURF_brisk(img):
+     9   49.785 MiB    0.883 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.848 MiB    0.062 MiB   	surf = cv2.xfeatures2d.SURF_create()
+    12   95.094 MiB   45.246 MiB   	brisk = cv2.BRISK_create()
+    13   95.156 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   96.176 MiB    1.020 MiB   	kp1 = surf.detect(img1,None)
+    16   96.590 MiB    0.414 MiB   	kp1, des1 = brisk.compute(img1, kp1)
+    17                             
+    18   97.172 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             
+    20   97.367 MiB    0.195 MiB   	kp2 = surf.detect(img2,None)
+    21   97.453 MiB    0.086 MiB   	kp2, des2 = brisk.compute(img2, kp2)
+    22   97.734 MiB    0.281 MiB   	matches = bf.match(des1,des2)
+
+
+[ INFO:0] Initialize OpenCL runtime...
+Wrote profile results to SURF_brisk.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 13.8152 s
+File: SURF_brisk.py
+Function: SURF_brisk at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def SURF_brisk(img):
+     9         1      16800.0  16800.0      0.1  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        244.0    244.0      0.0  	surf = cv2.xfeatures2d.SURF_create()
+    12         1    6138393.0 6138393.0     44.4  	brisk = cv2.BRISK_create()
+    13         1        256.0    256.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1     693257.0 693257.0      5.0  	kp1 = surf.detect(img1,None)
+    16         1     122319.0 122319.0      0.9  	kp1, des1 = brisk.compute(img1, kp1)
+    17                                           
+    18         1      76757.0  76757.0      0.6  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           
+    20         1    4748911.0 4748911.0     34.4  	kp2 = surf.detect(img2,None)
+    21         1     847236.0 847236.0      6.1  	kp2, des2 = brisk.compute(img2, kp2)
+    22         1    1171027.0 1171027.0      8.5  	matches = bf.match(des1,des2)
+

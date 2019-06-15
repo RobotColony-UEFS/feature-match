@@ -4,9 +4,6 @@ import math
 import csv
 from decimal import *
 
-# Análise com falha, pois o desvio padrão está obtendo as relação para matches e corretos, mas não necessariamente
-# a relação este os matches e corretos, o desviopadrão não está levando em consideração esse problema
-
 mydb = mysql.connector.connect(
 	host = "localhost",
 	user = "descritores",
@@ -18,7 +15,7 @@ detectores = ["fast", "harris", "orb", "shiTomasi", "star", "surf"]
 descritores = ["brief" ,"brisk", "freak", "orb", "sift"]
 					
 
-with open('Comparacões.csv', 'w') as csvfile:
+with open('Comparacões2.csv', 'w') as csvfile:
     fieldnames = ['Nome', 'Media_Matches', 'Desvio_Padrao_Matches',  'Media_Corretos', 'Desvio_Padrao_Corretos', 'Porcentagem_Acertos']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()

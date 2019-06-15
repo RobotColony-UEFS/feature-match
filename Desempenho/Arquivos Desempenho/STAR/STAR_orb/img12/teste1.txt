@@ -1,0 +1,48 @@
+Filename: STAR_orb.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   49.180 MiB   49.180 MiB   @profile
+     8                             def STAR_orb(img):
+     9   50.117 MiB    0.938 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   50.234 MiB    0.117 MiB   	star = cv2.xfeatures2d.StarDetector_create()
+    12   50.297 MiB    0.062 MiB   	orb = cv2.ORB_create()
+    13   50.359 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             		
+    15   50.641 MiB    0.281 MiB   	kp1 = star.detect(img1,None)
+    16   51.312 MiB    0.672 MiB   	kp1, des1 = orb.compute(img1, kp1)
+    17                             
+    18   51.895 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             
+    20   51.902 MiB    0.008 MiB   	kp2 = star.detect(img2,None)
+    21   51.910 MiB    0.008 MiB   	kp2, des2 = orb.compute(img2, kp2)
+    22   52.262 MiB    0.352 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to STAR_orb.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 3.65454 s
+File: STAR_orb.py
+Function: STAR_orb at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def STAR_orb(img):
+     9         1      17457.0  17457.0      0.5  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        331.0    331.0      0.0  	star = cv2.xfeatures2d.StarDetector_create()
+    12         1        181.0    181.0      0.0  	orb = cv2.ORB_create()
+    13         1        321.0    321.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           		
+    15         1     129781.0 129781.0      3.6  	kp1 = star.detect(img1,None)
+    16         1      18747.0  18747.0      0.5  	kp1, des1 = orb.compute(img1, kp1)
+    17                                           
+    18         1      78466.0  78466.0      2.1  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           
+    20         1    3257847.0 3257847.0     89.1  	kp2 = star.detect(img2,None)
+    21         1     139364.0 139364.0      3.8  	kp2, des2 = orb.compute(img2, kp2)
+    22         1      12044.0  12044.0      0.3  	matches = bf.match(des1,des2)
+

@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Fast-Brief1    260    88       33.85%        img1.jpg
- Fast-Brief10    257    156       60.70%        img10.jpg
- Fast-Brief2    263    239       90.87%        img2.jpg
- Fast-Brief3    263    233       88.59%        img3.jpg
- Fast-Brief4    246    128       52.03%        img4.jpg
- Fast-Brief5    249    211       84.74%        img5.jpg
- Fast-Brief6    259    214       82.63%        img6.jpg
- Fast-Brief7    259    193       74.52%        img7.jpg
- Fast-Brief8    264    137       51.89%        img8.jpg
- Fast-Brief9    260    236       90.77%        img9.jpg
+ Fast-Brief1    150    118       78.67%        img1.jpg
+ Fast-Brief10    150    137       91.33%        img10.jpg
+ Fast-Brief11    150    121       80.67%        img11.jpg
+ Fast-Brief12    150    121       80.67%        img12.jpg
+ Fast-Brief13    150    131       87.33%        img13.jpg
+ Fast-Brief2    150    144       96.00%        img2.jpg
+ Fast-Brief3    150    148       98.67%        img3.jpg
+ Fast-Brief4    150    141       94.00%        img4.jpg
+ Fast-Brief5    150    148       98.67%        img5.jpg
+ Fast-Brief6    150    149       99.33%        img6.jpg
+ Fast-Brief7    150    146       97.33%        img7.jpg
+ Fast-Brief8    150    123       82.00%        img8.jpg
+ Fast-Brief9    150    119       79.33%        img9.jpg
 
 
-Média dos matches:  258.0
-Desvio Padrão dos matches:  5.67450438364
-Média dos corretos:  183.5
-Desvio Padrão dos corretos:  50.1821681477
-Porcentagem em relação aos valores médios:  71.1240310078 %ssssssssssssss
+Média dos matches:  150.0
+Média dos corretos:  134.307692308
+Desvio Padrão dos corretos:  11.9832229862
+Porcentagem em relação aos valores médios:  89.5384615385 %

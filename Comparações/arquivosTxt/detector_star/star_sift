@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Star-Sift1    59    34       57.63%        img1.jpg
- Star-Sift10    70    51       72.86%        img10.jpg
- Star-Sift2    75    74       98.67%        img2.jpg
- Star-Sift3    68    62       91.18%        img3.jpg
- Star-Sift4    70    50       71.43%        img4.jpg
- Star-Sift5    73    61       83.56%        img5.jpg
- Star-Sift6    75    57       76.00%        img6.jpg
- Star-Sift7    72    49       68.06%        img7.jpg
- Star-Sift8    67    55       82.09%        img8.jpg
- Star-Sift9    72    61       84.72%        img9.jpg
+ Star-Sift1    44    38       86.36%        img1.jpg
+ Star-Sift10    45    36       80.00%        img10.jpg
+ Star-Sift11    46    41       89.13%        img11.jpg
+ Star-Sift12    43    37       86.05%        img12.jpg
+ Star-Sift13    48    39       81.25%        img13.jpg
+ Star-Sift2    45    37       82.22%        img2.jpg
+ Star-Sift3    48    34       70.83%        img3.jpg
+ Star-Sift4    47    39       82.98%        img4.jpg
+ Star-Sift5    47    37       78.72%        img5.jpg
+ Star-Sift6    48    36       75.00%        img6.jpg
+ Star-Sift7    47    34       72.34%        img7.jpg
+ Star-Sift8    48    39       81.25%        img8.jpg
+ Star-Sift9    44    39       88.64%        img9.jpg
 
 
-Média dos matches:  70.1
-Desvio Padrão dos matches:  4.4821869662
-Média dos corretos:  55.4
-Desvio Padrão dos corretos:  10.0119928086
-Porcentagem em relação aos valores médios:  79.029957204 %
+Média dos matches:  46.1538461538
+Média dos corretos:  37.3846153846
+Desvio Padrão dos corretos:  1.98216903488
+Porcentagem em relação aos valores médios:  81.0 %

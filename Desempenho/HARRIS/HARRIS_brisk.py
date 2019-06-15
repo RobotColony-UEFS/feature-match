@@ -1,9 +1,10 @@
 #coding: utf-8
 import cv2
 import numpy as np
+iport sys
 
 @profile
-def HARRIS_brisk():
+def HARRIS_brisk(img):
 	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
 	brisk = cv2.BRISK_create()
 
@@ -24,7 +25,7 @@ def HARRIS_brisk():
 
 	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 
-	img2 = cv2.imread("../imgTeste/img1.jpg", 0)	
+	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
 	imagem2 = np.float32(img2)
 	dst2 = cv2.cornerHarris(imagem2,2,3,0.04)
 	dst2 = cv2.dilate(dst2,None)
@@ -42,6 +43,6 @@ def HARRIS_brisk():
 
 	matches = bf.match(des1,des2)
 
-
 if __name__ == '__main__':
-	HARRIS_brisk()
+	imgNumero = sys.argv[1]
+	HARRIS_brisk(imgNumero)

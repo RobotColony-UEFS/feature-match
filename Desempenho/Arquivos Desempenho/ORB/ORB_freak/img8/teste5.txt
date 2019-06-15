@@ -1,0 +1,50 @@
+[ INFO:0] Initialize OpenCL runtime...
+Filename: ORB_freak.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.688 MiB   48.688 MiB   @profile
+     8                             def ORB_freak(img):
+     9   49.652 MiB    0.965 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.715 MiB    0.062 MiB   	orb = cv2.ORB_create()
+    12   49.836 MiB    0.121 MiB   	freak = cv2.xfeatures2d.FREAK_create()
+    13   49.895 MiB    0.059 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   50.812 MiB    0.918 MiB   	kp1 = orb.detect(img1, None)
+    16   59.555 MiB    8.742 MiB   	kp1, des1 = freak.compute(img1, kp1)
+    17                             
+    18   60.137 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             	
+    20   60.148 MiB    0.012 MiB   	kp2 = orb.detect(img2, None)	
+    21   60.156 MiB    0.008 MiB   	kp2, des2 = freak.compute(img2, kp2)
+    22   60.426 MiB    0.270 MiB   	matches = bf.match(des1, des2)
+
+
+[ INFO:0] Initialize OpenCL runtime...
+Wrote profile results to ORB_freak.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 1.5314 s
+File: ORB_freak.py
+Function: ORB_freak at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def ORB_freak(img):
+     9         1      17259.0  17259.0      1.1  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        322.0    322.0      0.0  	orb = cv2.ORB_create()
+    12         1        302.0    302.0      0.0  	freak = cv2.xfeatures2d.FREAK_create()
+    13         1        230.0    230.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1      90333.0  90333.0      5.9  	kp1 = orb.detect(img1, None)
+    16         1     852733.0 852733.0     55.7  	kp1, des1 = freak.compute(img1, kp1)
+    17                                           
+    18         1      80621.0  80621.0      5.3  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           	
+    20         1     420998.0 420998.0     27.5  	kp2 = orb.detect(img2, None)	
+    21         1      62454.0  62454.0      4.1  	kp2, des2 = freak.compute(img2, kp2)
+    22         1       6147.0   6147.0      0.4  	matches = bf.match(des1, des2)
+

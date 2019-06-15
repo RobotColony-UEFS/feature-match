@@ -1,0 +1,48 @@
+Filename: STAR_brief.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.883 MiB   48.883 MiB   @profile
+     8                             def STAR_brief(img):
+     9   49.805 MiB    0.922 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.926 MiB    0.121 MiB   	star = cv2.xfeatures2d.StarDetector_create()
+    12   49.980 MiB    0.055 MiB   	brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()
+    13   50.043 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   50.395 MiB    0.352 MiB   	kp1 = star.detect(img1,None)
+    16   50.977 MiB    0.582 MiB   	kp1, des1 = brief.compute(img1, kp1)
+    17                             	
+    18   51.559 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             	
+    20   51.566 MiB    0.008 MiB   	kp2 = star.detect(img2,None)
+    21   51.574 MiB    0.008 MiB   	kp2, des2 = brief.compute(img2, kp2)
+    22   51.988 MiB    0.414 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to STAR_brief.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 3.57491 s
+File: STAR_brief.py
+Function: STAR_brief at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def STAR_brief(img):
+     9         1      18283.0  18283.0      0.5  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        310.0    310.0      0.0  	star = cv2.xfeatures2d.StarDetector_create()
+    12         1        167.0    167.0      0.0  	brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()
+    13         1        233.0    233.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1     128674.0 128674.0      3.6  	kp1 = star.detect(img1,None)
+    16         1      13258.0  13258.0      0.4  	kp1, des1 = brief.compute(img1, kp1)
+    17                                           	
+    18         1      82963.0  82963.0      2.3  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           	
+    20         1    3251627.0 3251627.0     91.0  	kp2 = star.detect(img2,None)
+    21         1      68476.0  68476.0      1.9  	kp2, des2 = brief.compute(img2, kp2)
+    22         1      10915.0  10915.0      0.3  	matches = bf.match(des1,des2)
+

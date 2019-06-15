@@ -1,0 +1,94 @@
+Filename: HARRIS_brief.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     6   48.566 MiB   48.566 MiB   @profile
+     7                             def HARRIS_brief(img):
+     8   49.309 MiB    0.742 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+     9   49.414 MiB    0.105 MiB   	brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()
+    10                             	
+    11   49.648 MiB    0.234 MiB   	imagem1 = np.float32(img1)
+    12   50.988 MiB    1.340 MiB   	dst1 = cv2.cornerHarris(imagem1,2,3,0.04)
+    13   51.465 MiB    0.477 MiB   	dst1 = cv2.dilate(dst1,None)
+    14   51.652 MiB    0.188 MiB   	ret1, dst1 = cv2.threshold(dst1,0.01*dst1.max(),255,0)
+    15   51.652 MiB    0.000 MiB   	dst1 = np.uint8(dst1)
+    16   51.738 MiB    0.086 MiB   	ret1, labels1, stats1, centroids1 = cv2.connectedComponentsWithStats(dst1)
+    17   51.738 MiB    0.000 MiB   	criteria1 = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
+    18   51.762 MiB    0.023 MiB   	corners1 = cv2.cornerSubPix(imagem1,np.float32(centroids1),(5,5),(-1,-1),criteria1)
+    19   51.762 MiB    0.000 MiB   	matriz1=[]
+    20   51.762 MiB    0.000 MiB   	for variavel in corners1:
+    21   51.762 MiB    0.000 MiB   		array=np.array([variavel])
+    22   51.762 MiB    0.000 MiB   		matriz1.append(array)
+    23   51.859 MiB    0.098 MiB   	kp1=cv2.KeyPoint_convert(matriz1)
+    24   52.438 MiB    0.578 MiB   	kp1, des1 = brief.compute(img1, kp1)
+    25                             
+    26   52.496 MiB    0.059 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    27                             
+    28   53.078 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    29   55.398 MiB    2.320 MiB   	imagem2 = np.float32(img2)
+    30   57.719 MiB    2.320 MiB   	dst2 = cv2.cornerHarris(imagem2,2,3,0.04)
+    31   57.719 MiB    0.000 MiB   	dst2 = cv2.dilate(dst2,None)
+    32   57.766 MiB    0.047 MiB   	ret2, dst2 = cv2.threshold(dst2,0.01*dst2.max(),255,0)
+    33   56.027 MiB    0.000 MiB   	dst2 = np.uint8(dst2)
+    34   58.348 MiB    2.320 MiB   	ret2, labels2, stats2, centroids2 = cv2.connectedComponentsWithStats(dst2)
+    35   58.348 MiB    0.000 MiB   	criteria2 = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
+    36   58.348 MiB    0.000 MiB   	corners2 = cv2.cornerSubPix(imagem2,np.float32(centroids2),(5,5),(-1,-1),criteria2)
+    37   58.348 MiB    0.000 MiB   	matriz2=[]
+    38   58.355 MiB    0.000 MiB   	for variavel in corners2:
+    39   58.355 MiB    0.004 MiB   		array=np.array([variavel])
+    40   58.355 MiB    0.000 MiB   		matriz2.append(array)
+    41   58.367 MiB    0.012 MiB   	kp2 = cv2.KeyPoint_convert(matriz2)
+    42   58.375 MiB    0.008 MiB   	kp2, des2 = brief.compute(img2, kp2)
+    43                             
+    44   58.605 MiB    0.230 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to HARRIS_brief.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 1.51415 s
+File: HARRIS_brief.py
+Function: HARRIS_brief at line 6
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     6                                           @profile
+     7                                           def HARRIS_brief(img):
+     8         1      17260.0  17260.0      1.1  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+     9         1        319.0    319.0      0.0  	brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()
+    10                                           	
+    11         1       3929.0   3929.0      0.3  	imagem1 = np.float32(img1)
+    12         1      75524.0  75524.0      5.0  	dst1 = cv2.cornerHarris(imagem1,2,3,0.04)
+    13         1      13215.0  13215.0      0.9  	dst1 = cv2.dilate(dst1,None)
+    14         1      12354.0  12354.0      0.8  	ret1, dst1 = cv2.threshold(dst1,0.01*dst1.max(),255,0)
+    15         1       6617.0   6617.0      0.4  	dst1 = np.uint8(dst1)
+    16         1      13003.0  13003.0      0.9  	ret1, labels1, stats1, centroids1 = cv2.connectedComponentsWithStats(dst1)
+    17         1         90.0     90.0      0.0  	criteria1 = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
+    18         1      20815.0  20815.0      1.4  	corners1 = cv2.cornerSubPix(imagem1,np.float32(centroids1),(5,5),(-1,-1),criteria1)
+    19         1         81.0     81.0      0.0  	matriz1=[]
+    20        47       3335.0     71.0      0.2  	for variavel in corners1:
+    21        46       8536.0    185.6      0.6  		array=np.array([variavel])
+    22        46       2956.0     64.3      0.2  		matriz1.append(array)
+    23         1       1324.0   1324.0      0.1  	kp1=cv2.KeyPoint_convert(matriz1)
+    24         1       8815.0   8815.0      0.6  	kp1, des1 = brief.compute(img1, kp1)
+    25                                           
+    26         1        287.0    287.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    27                                           
+    28         1      80001.0  80001.0      5.3  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    29         1      26722.0  26722.0      1.8  	imagem2 = np.float32(img2)
+    30         1     574332.0 574332.0     37.9  	dst2 = cv2.cornerHarris(imagem2,2,3,0.04)
+    31         1      96286.0  96286.0      6.4  	dst2 = cv2.dilate(dst2,None)
+    32         1      85186.0  85186.0      5.6  	ret2, dst2 = cv2.threshold(dst2,0.01*dst2.max(),255,0)
+    33         1      38270.0  38270.0      2.5  	dst2 = np.uint8(dst2)
+    34         1      75650.0  75650.0      5.0  	ret2, labels2, stats2, centroids2 = cv2.connectedComponentsWithStats(dst2)
+    35         1         82.0     82.0      0.0  	criteria2 = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
+    36         1     185764.0 185764.0     12.3  	corners2 = cv2.cornerSubPix(imagem2,np.float32(centroids2),(5,5),(-1,-1),criteria2)
+    37         1         59.0     59.0      0.0  	matriz2=[]
+    38       273      17502.0     64.1      1.2  	for variavel in corners2:
+    39       272      47021.0    172.9      3.1  		array=np.array([variavel])
+    40       272      17219.0     63.3      1.1  		matriz2.append(array)
+    41         1       6648.0   6648.0      0.4  	kp2 = cv2.KeyPoint_convert(matriz2)
+    42         1      68476.0  68476.0      4.5  	kp2, des2 = brief.compute(img2, kp2)
+    43                                           
+    44         1       6468.0   6468.0      0.4  	matches = bf.match(des1,des2)
+

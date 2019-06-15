@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Surf-Orb1    324    106       32.72%        img1.jpg
- Surf-Orb10    324    157       48.46%        img10.jpg
- Surf-Orb2    325    258       79.38%        img2.jpg
- Surf-Orb3    330    197       59.70%        img3.jpg
- Surf-Orb4    321    131       40.81%        img4.jpg
- Surf-Orb5    319    173       54.23%        img5.jpg
- Surf-Orb6    325    161       49.54%        img6.jpg
- Surf-Orb7    327    180       55.05%        img7.jpg
- Surf-Orb8    328    139       42.38%        img8.jpg
- Surf-Orb9    327    178       54.43%        img9.jpg
+ Surf-Orb1    150    81       54.00%        img1.jpg
+ Surf-Orb10    150    97       64.67%        img10.jpg
+ Surf-Orb11    150    100       66.67%        img11.jpg
+ Surf-Orb12    150    94       62.67%        img12.jpg
+ Surf-Orb13    150    83       55.33%        img13.jpg
+ Surf-Orb2    150    102       68.00%        img2.jpg
+ Surf-Orb3    150    114       76.00%        img3.jpg
+ Surf-Orb4    150    94       62.67%        img4.jpg
+ Surf-Orb5    150    111       74.00%        img5.jpg
+ Surf-Orb6    150    103       68.67%        img6.jpg
+ Surf-Orb7    150    105       70.00%        img7.jpg
+ Surf-Orb8    150    82       54.67%        img8.jpg
+ Surf-Orb9    150    82       54.67%        img9.jpg
 
 
-Média dos matches:  325.0
-Desvio Padrão dos matches:  3.09838667697
-Média dos corretos:  168.0
-Desvio Padrão dos corretos:  39.2861298679
-Porcentagem em relação aos valores médios:  51.6923076923 %
+Média dos matches:  150.0
+Média dos corretos:  96.0
+Desvio Padrão dos corretos:  10.8344180916
+Porcentagem em relação aos valores médios:  64.0 %

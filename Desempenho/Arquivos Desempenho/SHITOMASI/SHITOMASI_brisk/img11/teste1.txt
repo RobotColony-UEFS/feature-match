@@ -1,0 +1,52 @@
+Filename: SHITOMASI_brisk.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.520 MiB   48.520 MiB   @profile
+     8                             def SHITOMASI_brisk(img):
+     9   49.285 MiB    0.766 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10   50.496 MiB    1.211 MiB   	corners11 = cv2.goodFeaturesToTrack(img1, 100, 0.01, 10)
+    11   50.496 MiB    0.000 MiB   	corners1 = np.int0(corners11)
+    12   50.594 MiB    0.098 MiB   	kp1 = cv2.KeyPoint_convert(corners1)
+    13                             
+    14   95.777 MiB   45.184 MiB   	brisk = cv2.BRISK_create()
+    15   95.840 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    16   96.453 MiB    0.613 MiB   	kp1, des1 = brisk.compute(img1, kp1)
+    17   97.035 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    18                             	
+    19   97.082 MiB    0.047 MiB   	corners22 = cv2.goodFeaturesToTrack(img2, 100, 0.01, 10)
+    20   97.082 MiB    0.000 MiB   	corners2 = np.int0(corners22)
+    21   97.082 MiB    0.000 MiB   	kp2 = cv2.KeyPoint_convert(corners2)
+    22   97.086 MiB    0.004 MiB   	kp2, des2 = brisk.compute(img2, kp2)
+    23                             
+    24   97.258 MiB    0.172 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to SHITOMASI_brisk.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 7.59046 s
+File: SHITOMASI_brisk.py
+Function: SHITOMASI_brisk at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def SHITOMASI_brisk(img):
+     9         1      17410.0  17410.0      0.2  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10         1     121267.0 121267.0      1.6  	corners11 = cv2.goodFeaturesToTrack(img1, 100, 0.01, 10)
+    11         1        214.0    214.0      0.0  	corners1 = np.int0(corners11)
+    12         1       3982.0   3982.0      0.1  	kp1 = cv2.KeyPoint_convert(corners1)
+    13                                           
+    14         1    6346472.0 6346472.0     83.6  	brisk = cv2.BRISK_create()
+    15         1        259.0    259.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    16         1      23249.0  23249.0      0.3  	kp1, des1 = brisk.compute(img1, kp1)
+    17         1      77278.0  77278.0      1.0  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    18                                           	
+    19         1     931144.0 931144.0     12.3  	corners22 = cv2.goodFeaturesToTrack(img2, 100, 0.01, 10)
+    20         1        229.0    229.0      0.0  	corners2 = np.int0(corners22)
+    21         1       3674.0   3674.0      0.0  	kp2 = cv2.KeyPoint_convert(corners2)
+    22         1      57156.0  57156.0      0.8  	kp2, des2 = brisk.compute(img2, kp2)
+    23                                           
+    24         1       8123.0   8123.0      0.1  	matches = bf.match(des1,des2)
+

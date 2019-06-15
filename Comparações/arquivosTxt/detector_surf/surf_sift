@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Surf-Sift1    334    161       48.20%        img1.jpg
- Surf-Sift10    364    228       62.64%        img10.jpg
- Surf-Sift2    368    266       72.28%        img2.jpg
- Surf-Sift3    376    243       64.63%        img3.jpg
- Surf-Sift4    345    237       68.70%        img4.jpg
- Surf-Sift5    352    208       59.09%        img5.jpg
- Surf-Sift6    373    226       60.59%        img6.jpg
- Surf-Sift7    387    232       59.95%        img7.jpg
- Surf-Sift8    337    178       52.82%        img8.jpg
- Surf-Sift9    367    234       63.76%        img9.jpg
+ Surf-Sift1    150    149       99.33%        img1.jpg
+ Surf-Sift10    150    133       88.67%        img10.jpg
+ Surf-Sift11    150    134       89.33%        img11.jpg
+ Surf-Sift12    150    144       96.00%        img12.jpg
+ Surf-Sift13    150    140       93.33%        img13.jpg
+ Surf-Sift2    150    149       99.33%        img2.jpg
+ Surf-Sift3    150    149       99.33%        img3.jpg
+ Surf-Sift4    150    150       100.00%        img4.jpg
+ Surf-Sift5    150    150       100.00%        img5.jpg
+ Surf-Sift6    150    149       99.33%        img6.jpg
+ Surf-Sift7    150    139       92.67%        img7.jpg
+ Surf-Sift8    150    131       87.33%        img8.jpg
+ Surf-Sift9    150    134       89.33%        img9.jpg
 
 
-Média dos matches:  360.3
-Desvio Padrão dos matches:  16.6616325731
-Média dos corretos:  221.3
-Desvio Padrão dos corretos:  29.5738059776
-Porcentagem em relação aos valores médios:  61.4210380239 %
+Média dos matches:  150.0
+Média dos corretos:  142.384615385
+Desvio Padrão dos corretos:  7.17408221456
+Porcentagem em relação aos valores médios:  94.9230769231 %

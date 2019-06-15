@@ -1,0 +1,94 @@
+Filename: HARRIS_brisk.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     6   49.047 MiB   49.047 MiB   @profile
+     7                             def HARRIS_brisk(img):
+     8   49.922 MiB    0.875 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+     9   95.211 MiB   45.289 MiB   	brisk = cv2.BRISK_create()
+    10                             
+    11   95.484 MiB    0.273 MiB   	imagem1 = np.float32(img1)
+    12   96.699 MiB    1.215 MiB   	dst1 = cv2.cornerHarris(imagem1,2,3,0.04)
+    13   97.078 MiB    0.379 MiB   	dst1 = cv2.dilate(dst1,None)
+    14   97.258 MiB    0.180 MiB   	ret1, dst1 = cv2.threshold(dst1,0.01*dst1.max(),255,0)
+    15   97.258 MiB    0.000 MiB   	dst1 = np.uint8(dst1)
+    16   97.363 MiB    0.105 MiB   	ret1, labels1, stats1, centroids1 = cv2.connectedComponentsWithStats(dst1)
+    17   97.363 MiB    0.000 MiB   	criteria1 = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
+    18   97.406 MiB    0.043 MiB   	corners1 = cv2.cornerSubPix(imagem1,np.float32(centroids1),(5,5),(-1,-1),criteria1)
+    19   97.406 MiB    0.000 MiB   	matriz1=[]
+    20   97.406 MiB    0.000 MiB   	for variavel in corners1:
+    21   97.406 MiB    0.000 MiB   		array=np.array([variavel])
+    22   97.406 MiB    0.000 MiB   		matriz1.append(array)
+    23   97.410 MiB    0.004 MiB   	kp1=cv2.KeyPoint_convert(matriz1)
+    24   97.684 MiB    0.273 MiB   	kp1, des1 = brisk.compute(img1, kp1)
+    25                             
+    26   97.809 MiB    0.125 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    27                             
+    28   98.391 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    29  100.711 MiB    2.320 MiB   	imagem2 = np.float32(img2)
+    30  103.031 MiB    2.320 MiB   	dst2 = cv2.cornerHarris(imagem2,2,3,0.04)
+    31  103.031 MiB    0.000 MiB   	dst2 = cv2.dilate(dst2,None)
+    32  103.031 MiB    0.000 MiB   	ret2, dst2 = cv2.threshold(dst2,0.01*dst2.max(),255,0)
+    33  101.293 MiB    0.000 MiB   	dst2 = np.uint8(dst2)
+    34  103.613 MiB    2.320 MiB   	ret2, labels2, stats2, centroids2 = cv2.connectedComponentsWithStats(dst2)
+    35  103.613 MiB    0.000 MiB   	criteria2 = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
+    36  103.613 MiB    0.000 MiB   	corners2 = cv2.cornerSubPix(imagem2,np.float32(centroids2),(5,5),(-1,-1),criteria2)
+    37  103.613 MiB    0.000 MiB   	matriz2=[]
+    38  103.621 MiB    0.000 MiB   	for variavel in corners2:
+    39  103.621 MiB    0.004 MiB   		array=np.array([variavel])
+    40  103.621 MiB    0.000 MiB   		matriz2.append(array)
+    41  103.633 MiB    0.012 MiB   	kp2 = cv2.KeyPoint_convert(matriz2)
+    42  103.645 MiB    0.012 MiB   	kp2, des2 = brisk.compute(img2, kp2)
+    43                             
+    44  103.988 MiB    0.344 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to HARRIS_brisk.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 7.88682 s
+File: HARRIS_brisk.py
+Function: HARRIS_brisk at line 6
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     6                                           @profile
+     7                                           def HARRIS_brisk(img):
+     8         1      17346.0  17346.0      0.2  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+     9         1    6340155.0 6340155.0     80.4  	brisk = cv2.BRISK_create()
+    10                                           
+    11         1       4034.0   4034.0      0.1  	imagem1 = np.float32(img1)
+    12         1      76287.0  76287.0      1.0  	dst1 = cv2.cornerHarris(imagem1,2,3,0.04)
+    13         1      12871.0  12871.0      0.2  	dst1 = cv2.dilate(dst1,None)
+    14         1      12869.0  12869.0      0.2  	ret1, dst1 = cv2.threshold(dst1,0.01*dst1.max(),255,0)
+    15         1       6444.0   6444.0      0.1  	dst1 = np.uint8(dst1)
+    16         1      11580.0  11580.0      0.1  	ret1, labels1, stats1, centroids1 = cv2.connectedComponentsWithStats(dst1)
+    17         1         83.0     83.0      0.0  	criteria1 = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
+    18         1      22252.0  22252.0      0.3  	corners1 = cv2.cornerSubPix(imagem1,np.float32(centroids1),(5,5),(-1,-1),criteria1)
+    19         1         58.0     58.0      0.0  	matriz1=[]
+    20        47       3132.0     66.6      0.0  	for variavel in corners1:
+    21        46       7356.0    159.9      0.1  		array=np.array([variavel])
+    22        46       2785.0     60.5      0.0  		matriz1.append(array)
+    23         1       1231.0   1231.0      0.0  	kp1=cv2.KeyPoint_convert(matriz1)
+    24         1      13064.0  13064.0      0.2  	kp1, des1 = brisk.compute(img1, kp1)
+    25                                           
+    26         1        275.0    275.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    27                                           
+    28         1      81023.0  81023.0      1.0  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    29         1      26942.0  26942.0      0.3  	imagem2 = np.float32(img2)
+    30         1     577723.0 577723.0      7.3  	dst2 = cv2.cornerHarris(imagem2,2,3,0.04)
+    31         1      97201.0  97201.0      1.2  	dst2 = cv2.dilate(dst2,None)
+    32         1      84770.0  84770.0      1.1  	ret2, dst2 = cv2.threshold(dst2,0.01*dst2.max(),255,0)
+    33         1      38603.0  38603.0      0.5  	dst2 = np.uint8(dst2)
+    34         1      77140.0  77140.0      1.0  	ret2, labels2, stats2, centroids2 = cv2.connectedComponentsWithStats(dst2)
+    35         1         77.0     77.0      0.0  	criteria2 = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
+    36         1     185778.0 185778.0      2.4  	corners2 = cv2.cornerSubPix(imagem2,np.float32(centroids2),(5,5),(-1,-1),criteria2)
+    37         1         58.0     58.0      0.0  	matriz2=[]
+    38       273      18548.0     67.9      0.2  	for variavel in corners2:
+    39       272      44028.0    161.9      0.6  		array=np.array([variavel])
+    40       272      16902.0     62.1      0.2  		matriz2.append(array)
+    41         1       5387.0   5387.0      0.1  	kp2 = cv2.KeyPoint_convert(matriz2)
+    42         1      91269.0  91269.0      1.2  	kp2, des2 = brisk.compute(img2, kp2)
+    43                                           
+    44         1       9554.0   9554.0      0.1  	matches = bf.match(des1,des2)
+

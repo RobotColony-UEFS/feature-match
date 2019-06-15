@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Surf-Brief1    306    66       21.57%        img1.jpg
- Surf-Brief10    308    137       44.48%        img10.jpg
- Surf-Brief2    321    280       87.23%        img2.jpg
- Surf-Brief3    325    247       76.00%        img3.jpg
- Surf-Brief4    310    105       33.87%        img4.jpg
- Surf-Brief5    316    180       56.96%        img5.jpg
- Surf-Brief6    319    194       60.82%        img6.jpg
- Surf-Brief7    323    201       62.23%        img7.jpg
- Surf-Brief8    324    147       45.37%        img8.jpg
- Surf-Brief9    324    231       71.30%        img9.jpg
+ Surf-Brief1    150    87       58.00%        img1.jpg
+ Surf-Brief10    150    113       75.33%        img10.jpg
+ Surf-Brief11    150    112       74.67%        img11.jpg
+ Surf-Brief12    150    92       61.33%        img12.jpg
+ Surf-Brief13    150    88       58.67%        img13.jpg
+ Surf-Brief2    150    123       82.00%        img2.jpg
+ Surf-Brief3    150    138       92.00%        img3.jpg
+ Surf-Brief4    150    118       78.67%        img4.jpg
+ Surf-Brief5    150    138       92.00%        img5.jpg
+ Surf-Brief6    150    128       85.33%        img6.jpg
+ Surf-Brief7    150    116       77.33%        img7.jpg
+ Surf-Brief8    150    97       64.67%        img8.jpg
+ Surf-Brief9    150    85       56.67%        img9.jpg
 
 
-Média dos matches:  317.6
-Desvio Padrão dos matches:  6.82934843159
-Média dos corretos:  178.8
-Desvio Padrão dos corretos:  62.6670567364
-Porcentagem em relação aos valores médios:  56.2972292191 %
+Média dos matches:  150.0
+Média dos corretos:  110.384615385
+Desvio Padrão dos corretos:  18.1935680162
+Porcentagem em relação aos valores médios:  73.5897435897 %

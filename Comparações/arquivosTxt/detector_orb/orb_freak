@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Orb-freak1    27    22       81.48%        img1.jpg
- Orb-freak10    29    26       89.66%        img10.jpg
- Orb-freak2    26    24       92.31%        img2.jpg
- Orb-freak3    30    29       96.67%        img3.jpg
- Orb-freak4    28    22       78.57%        img4.jpg
- Orb-freak5    29    24       82.76%        img5.jpg
- Orb-freak6    29    28       96.55%        img6.jpg
- Orb-freak7    30    30       100.00%        img7.jpg
- Orb-freak8    27    24       88.89%        img8.jpg
- Orb-freak9    29    29       100.00%        img9.jpg
+ Orb-freak1    73    73       100.00%        img1.jpg
+ Orb-freak10    110    110       100.00%        img10.jpg
+ Orb-freak11    86    86       100.00%        img11.jpg
+ Orb-freak12    85    85       100.00%        img12.jpg
+ Orb-freak13    90    89       98.89%        img13.jpg
+ Orb-freak2    103    103       100.00%        img2.jpg
+ Orb-freak3    104    103       99.04%        img3.jpg
+ Orb-freak4    90    90       100.00%        img4.jpg
+ Orb-freak5    98    96       97.96%        img5.jpg
+ Orb-freak6    105    104       99.05%        img6.jpg
+ Orb-freak7    97    96       98.97%        img7.jpg
+ Orb-freak8    84    81       96.43%        img8.jpg
+ Orb-freak9    87    84       96.55%        img9.jpg
 
 
-Média dos matches:  28.4
-Desvio Padrão dos matches:  1.28062484749
-Média dos corretos:  25.8
-Desvio Padrão dos corretos:  2.85657137142
-Porcentagem em relação aos valores médios:  90.8450704225 %
+Média dos matches:  93.230769231
+Média dos corretos:  92.307692308
+Desvio Padrão dos corretos:  10.32
+Porcentagem em relação aos valores médios:  99.00 %

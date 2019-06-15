@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Harris-orb1    24    9       37.50%        img1.jpg
- Harris-orb10    24    13       54.17%        img10.jpg
- Harris-orb2    24    23       95.83%        img2.jpg
- Harris-orb3    24    17       70.83%        img3.jpg
- Harris-orb4    24    8       33.33%        img4.jpg
- Harris-orb5    24    19       79.17%        img5.jpg
- Harris-orb6    24    17       70.83%        img6.jpg
- Harris-orb7    24    17       70.83%        img7.jpg
- Harris-orb8    24    10       41.67%        img8.jpg
- Harris-orb9    24    18       75.00%        img9.jpg
+ Harris-orb1    20    12       60.00%        img1.jpg
+ Harris-orb10    19    15       78.95%        img10.jpg
+ Harris-orb11    20    17       85.00%        img11.jpg
+ Harris-orb12    20    15       75.00%        img12.jpg
+ Harris-orb13    19    13       68.42%        img13.jpg
+ Harris-orb2    20    18       90.00%        img2.jpg
+ Harris-orb3    20    14       70.00%        img3.jpg
+ Harris-orb4    20    13       65.00%        img4.jpg
+ Harris-orb5    20    17       85.00%        img5.jpg
+ Harris-orb6    20    16       80.00%        img6.jpg
+ Harris-orb7    20    15       75.00%        img7.jpg
+ Harris-orb8    20    14       70.00%        img8.jpg
+ Harris-orb9    20    11       55.00%        img9.jpg
 
 
-Média dos matches:  24.0
-Desvio Padrão dos matches:  0.0
-Média dos corretos:  15.1
-Desvio Padrão dos corretos:  4.6357307946
-Porcentagem em relação aos valores médios:  62.9166666667 %
+Média dos matches:  19.8461538462
+Média dos corretos:  14.6153846154
+Desvio Padrão dos corretos:  1.98216903488
+Porcentagem em relação aos valores médios:  73.6434108527 %

@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Harris-sift1    42    12       28.57%        img1.jpg
- Harris-sift10    42    14       33.33%        img10.jpg
- Harris-sift2    42    31       73.81%        img2.jpg
- Harris-sift3    42    17       40.48%        img3.jpg
- Harris-sift4    42    8       19.05%        img4.jpg
- Harris-sift5    40    16       40.00%        img5.jpg
- Harris-sift6    42    17       40.48%        img6.jpg
- Harris-sift7    41    12       29.27%        img7.jpg
- Harris-sift8    41    9       21.95%        img8.jpg
- Harris-sift9    43    16       37.21%        img9.jpg
+ Harris-sift1    36    13       36.11%        img1.jpg
+ Harris-sift10    35    21       60.00%        img10.jpg
+ Harris-sift11    30    16       53.33%        img11.jpg
+ Harris-sift12    35    16       45.71%        img12.jpg
+ Harris-sift13    36    16       44.44%        img13.jpg
+ Harris-sift2    36    11       30.56%        img2.jpg
+ Harris-sift3    35    13       37.14%        img3.jpg
+ Harris-sift4    36    16       44.44%        img4.jpg
+ Harris-sift5    34    12       35.29%        img5.jpg
+ Harris-sift6    35    13       37.14%        img6.jpg
+ Harris-sift7    37    19       51.35%        img7.jpg
+ Harris-sift8    37    11       29.73%        img8.jpg
+ Harris-sift9    37    12       32.43%        img9.jpg
 
 
-Média dos matches:  41.7
-Desvio Padrão dos matches:  0.781024967591
-Média dos corretos:  15.2
-Desvio Padrão dos corretos:  6.07947366143
-Porcentagem em relação aos valores médios:  36.4508393285 %
+Média dos matches:  35.3076923077
+Média dos corretos:  14.5384615385
+Desvio Padrão dos corretos:  2.97723115083
+Porcentagem em relação aos valores médios:  41.1764705882 %

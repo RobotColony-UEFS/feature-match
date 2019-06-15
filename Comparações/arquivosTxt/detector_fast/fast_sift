@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Fast-Sift1    333    128       38.44%        img1.jpg
- Fast-Sift10    372    241       64.78%        img10.jpg
- Fast-Sift2    380    345       90.79%        img2.jpg
- Fast-Sift3    384    324       84.38%        img3.jpg
- Fast-Sift4    330    221       66.97%        img4.jpg
- Fast-Sift5    360    310       86.11%        img5.jpg
- Fast-Sift6    384    297       77.34%        img6.jpg
- Fast-Sift7    380    311       81.84%        img7.jpg
- Fast-Sift8    329    202       61.40%        img8.jpg
- Fast-Sift9    381    319       83.73%        img9.jpg
+ Fast-Sift1    150    135       90.00%        img1.jpg
+ Fast-Sift10    150    150       100.00%        img10.jpg
+ Fast-Sift11    150    138       92.00%        img11.jpg
+ Fast-Sift12    150    125       83.33%        img12.jpg
+ Fast-Sift13    150    126       84.00%        img13.jpg
+ Fast-Sift2    150    150       100.00%        img2.jpg
+ Fast-Sift3    150    150       100.00%        img3.jpg
+ Fast-Sift4    150    145       96.67%        img4.jpg
+ Fast-Sift5    150    150       100.00%        img5.jpg
+ Fast-Sift6    150    150       100.00%        img6.jpg
+ Fast-Sift7    150    149       99.33%        img7.jpg
+ Fast-Sift8    150    144       96.00%        img8.jpg
+ Fast-Sift9    150    122       81.33%        img9.jpg
 
 
-Média dos matches:  363.3
-Desvio Padrão dos matches:  22.4011160436
-Média dos corretos:  269.8
-Desvio Padrão dos corretos:  65.5603538734
-Porcentagem em relação aos valores médios:  74.2636939169 %
+Média dos matches:  150.0
+Média dos corretos:  141.076923077
+Desvio Padrão dos corretos:  10.3065441381
+Porcentagem em relação aos valores médios:  94.0512820513 %

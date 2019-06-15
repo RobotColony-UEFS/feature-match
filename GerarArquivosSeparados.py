@@ -36,7 +36,7 @@ mydb = mysql.connector.connect(
 )
 detectores = ["fast", "harris", "orb", "shiTomasi", "star", "surf"]
 descritores = ["brief" ,"brisk", "freak", "orb", "sift"]
-#mydb.cursor() instancia objetos que podem executar operações, como inserir, select .....
+
 
 for dect in detectores:
 	nomeDetect = dect

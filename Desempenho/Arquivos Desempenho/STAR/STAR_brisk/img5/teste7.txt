@@ -1,0 +1,48 @@
+Filename: STAR_brisk.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.613 MiB   48.613 MiB   @profile
+     8                             def STAR_brisk(img):
+     9   49.449 MiB    0.836 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.512 MiB    0.062 MiB   	star = cv2.xfeatures2d.StarDetector_create()
+    12   94.738 MiB   45.227 MiB   	brisk = cv2.BRISK_create()
+    13   94.801 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   95.309 MiB    0.508 MiB   	kp1 = star.detect(img1,None)
+    16   95.773 MiB    0.465 MiB   	kp1, des1 = brisk.compute(img1, kp1)
+    17                             
+    18   96.355 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             	
+    20   96.363 MiB    0.008 MiB   	kp2 = star.detect(img2,None)
+    21   96.375 MiB    0.012 MiB   	kp2, des2 = brisk.compute(img2, kp2)
+    22   96.715 MiB    0.340 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to STAR_brisk.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 9.93602 s
+File: STAR_brisk.py
+Function: STAR_brisk at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def STAR_brisk(img):
+     9         1      18695.0  18695.0      0.2  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        430.0    430.0      0.0  	star = cv2.xfeatures2d.StarDetector_create()
+    12         1    6320944.0 6320944.0     63.6  	brisk = cv2.BRISK_create()
+    13         1        392.0    392.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1     127031.0 127031.0      1.3  	kp1 = star.detect(img1,None)
+    16         1      18751.0  18751.0      0.2  	kp1, des1 = brisk.compute(img1, kp1)
+    17                                           
+    18         1      75122.0  75122.0      0.8  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           	
+    20         1    3250284.0 3250284.0     32.7  	kp2 = star.detect(img2,None)
+    21         1     107789.0 107789.0      1.1  	kp2, des2 = brisk.compute(img2, kp2)
+    22         1      16585.0  16585.0      0.2  	matches = bf.match(des1,des2)
+

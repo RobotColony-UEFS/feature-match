@@ -1,0 +1,50 @@
+[ INFO:0] Initialize OpenCL runtime...
+Filename: SURF_brief.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.605 MiB   48.605 MiB   @profile
+     8                             def SURF_brief(img):
+     9   49.414 MiB    0.809 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.523 MiB    0.109 MiB   	surf = cv2.xfeatures2d.SURF_create()
+    12   49.574 MiB    0.051 MiB   	brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()
+    13   49.699 MiB    0.125 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   50.699 MiB    1.000 MiB   	kp1 = surf.detect(img1,None)
+    16   51.336 MiB    0.637 MiB   	kp1, des1 = brief.compute(img1, kp1)
+    17                             
+    18   51.918 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             
+    20   52.086 MiB    0.168 MiB   	kp2 = surf.detect(img2,None)
+    21   52.156 MiB    0.070 MiB   	kp2, des2 = brief.compute(img2, kp2)
+    22   52.508 MiB    0.352 MiB   	matches = bf.match(des1,des2)
+
+
+[ INFO:0] Initialize OpenCL runtime...
+Wrote profile results to SURF_brief.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 6.63603 s
+File: SURF_brief.py
+Function: SURF_brief at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def SURF_brief(img):
+     9         1      16838.0  16838.0      0.3  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        238.0    238.0      0.0  	surf = cv2.xfeatures2d.SURF_create()
+    12         1        166.0    166.0      0.0  	brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()
+    13         1        228.0    228.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1     693595.0 693595.0     10.5  	kp1 = surf.detect(img1,None)
+    16         1      76295.0  76295.0      1.1  	kp1, des1 = brief.compute(img1, kp1)
+    17                                           
+    18         1      72789.0  72789.0      1.1  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           
+    20         1    4407162.0 4407162.0     66.4  	kp2 = surf.detect(img2,None)
+    21         1     339973.0 339973.0      5.1  	kp2, des2 = brief.compute(img2, kp2)
+    22         1    1028748.0 1028748.0     15.5  	matches = bf.match(des1,des2)
+

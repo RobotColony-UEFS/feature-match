@@ -1,0 +1,50 @@
+[ INFO:0] Initialize OpenCL runtime...
+Filename: ORB_sift.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   49.000 MiB   49.000 MiB   @profile
+     8                             def ORB_sift(img):
+     9   49.930 MiB    0.930 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.992 MiB    0.062 MiB   	orb = cv2.ORB_create()
+    12   50.109 MiB    0.117 MiB   	sift = cv2.xfeatures2d.SIFT_create()
+    13   50.234 MiB    0.125 MiB   	bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+    14                             
+    15   51.102 MiB    0.867 MiB   	kp1 = orb.detect(img1, None)
+    16   56.816 MiB    5.715 MiB   	kp1, des1 = sift.compute(img1, kp1)
+    17                             
+    18   56.816 MiB    0.000 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             
+    20   56.820 MiB    0.004 MiB   	kp2 = orb.detect(img2, None)	
+    21   59.004 MiB    2.184 MiB   	kp2, des2 = sift.compute(img2, kp2)
+    22   59.414 MiB    0.410 MiB   	matches = bf.match(des1, des2)
+
+
+[ INFO:0] Initialize OpenCL runtime...
+Wrote profile results to ORB_sift.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 29.494 s
+File: ORB_sift.py
+Function: ORB_sift at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def ORB_sift(img):
+     9         1      18634.0  18634.0      0.1  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        218.0    218.0      0.0  	orb = cv2.ORB_create()
+    12         1        288.0    288.0      0.0  	sift = cv2.xfeatures2d.SIFT_create()
+    13         1        317.0    317.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+    14                                           
+    15         1      89795.0  89795.0      0.3  	kp1 = orb.detect(img1, None)
+    16         1   11196499.0 11196499.0     38.0  	kp1, des1 = sift.compute(img1, kp1)
+    17                                           
+    18         1      75750.0  75750.0      0.3  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           
+    20         1     392309.0 392309.0      1.3  	kp2 = orb.detect(img2, None)	
+    21         1   16614620.0 16614620.0     56.3  	kp2, des2 = sift.compute(img2, kp2)
+    22         1    1105581.0 1105581.0      3.7  	matches = bf.match(des1, des2)
+

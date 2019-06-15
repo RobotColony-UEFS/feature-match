@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Star-Orb1    75    22       29.33%        img1.jpg
- Star-Orb10    74    42       56.76%        img10.jpg
- Star-Orb2    76    70       92.11%        img2.jpg
- Star-Orb3    75    53       70.67%        img3.jpg
- Star-Orb4    68    35       51.47%        img4.jpg
- Star-Orb5    74    46       62.16%        img5.jpg
- Star-Orb6    76    47       61.84%        img6.jpg
- Star-Orb7    75    54       72.00%        img7.jpg
- Star-Orb8    71    39       54.93%        img8.jpg
- Star-Orb9    75    60       80.00%        img9.jpg
+ Star-Orb1    45    22       48.89%        img1.jpg
+ Star-Orb10    42    27       64.29%        img10.jpg
+ Star-Orb11    44    29       65.91%        img11.jpg
+ Star-Orb12    45    24       53.33%        img12.jpg
+ Star-Orb13    45    26       57.78%        img13.jpg
+ Star-Orb2    42    27       64.29%        img2.jpg
+ Star-Orb3    45    29       64.44%        img3.jpg
+ Star-Orb4    45    27       60.00%        img4.jpg
+ Star-Orb5    43    28       65.12%        img5.jpg
+ Star-Orb6    46    29       63.04%        img6.jpg
+ Star-Orb7    43    29       67.44%        img7.jpg
+ Star-Orb8    44    25       56.82%        img8.jpg
+ Star-Orb9    46    25       54.35%        img9.jpg
 
 
-Média dos matches:  73.9
-Desvio Padrão dos matches:  2.38537208838
-Média dos corretos:  46.8
-Desvio Padrão dos corretos:  12.8124939024
-Porcentagem em relação aos valores médios:  63.3288227334 %
+Média dos matches:  44.2307692308
+Média dos corretos:  26.6923076923
+Desvio Padrão dos corretos:  2.12619614786
+Porcentagem em relação aos valores médios:  60.347826087 %

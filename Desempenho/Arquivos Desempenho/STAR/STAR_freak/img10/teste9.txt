@@ -1,0 +1,48 @@
+Filename: STAR_freak.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.730 MiB   48.730 MiB   @profile
+     8                             def STAR_freak(img):
+     9   49.672 MiB    0.941 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.789 MiB    0.117 MiB   	star = cv2.xfeatures2d.StarDetector_create()
+    12   49.910 MiB    0.121 MiB   	freak = cv2.xfeatures2d.FREAK_create()
+    13   49.973 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   50.277 MiB    0.305 MiB   	kp1 = star.detect(img1,None)
+    16   58.824 MiB    8.547 MiB   	kp1, des1 = freak.compute(img1, kp1)
+    17                             
+    18   59.406 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             	
+    20   59.410 MiB    0.004 MiB   	kp2 = star.detect(img2,None)
+    21   59.414 MiB    0.004 MiB   	kp2, des2 = freak.compute(img2, kp2)
+    22   59.871 MiB    0.457 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to STAR_freak.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 4.39216 s
+File: STAR_freak.py
+Function: STAR_freak at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def STAR_freak(img):
+     9         1      17209.0  17209.0      0.4  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        452.0    452.0      0.0  	star = cv2.xfeatures2d.StarDetector_create()
+    12         1        277.0    277.0      0.0  	freak = cv2.xfeatures2d.FREAK_create()
+    13         1        329.0    329.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1     128001.0 128001.0      2.9  	kp1 = star.detect(img1,None)
+    16         1     850918.0 850918.0     19.4  	kp1, des1 = freak.compute(img1, kp1)
+    17                                           
+    18         1      79122.0  79122.0      1.8  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           	
+    20         1    3250041.0 3250041.0     74.0  	kp2 = star.detect(img2,None)
+    21         1      54857.0  54857.0      1.2  	kp2, des2 = freak.compute(img2, kp2)
+    22         1      10956.0  10956.0      0.2  	matches = bf.match(des1,des2)
+

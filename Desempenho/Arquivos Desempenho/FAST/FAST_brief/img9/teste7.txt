@@ -1,0 +1,48 @@
+Filename: FAST_brief.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   49.055 MiB   49.055 MiB   @profile
+     8                             def FAST_brief(img):
+     9   49.992 MiB    0.938 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   50.051 MiB    0.059 MiB   	fast = cv2.FastFeatureDetector_create(threshold=20)
+    12   50.156 MiB    0.105 MiB   	brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()
+    13   50.215 MiB    0.059 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   50.520 MiB    0.305 MiB   	kp1 = fast.detect(img1,None)
+    16   51.242 MiB    0.723 MiB   	kp1, des1 = brief.compute(img1, kp1)
+    17                             
+    18   51.824 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             
+    20   51.879 MiB    0.055 MiB   	kp2 = fast.detect(img2,None)
+    21   51.961 MiB    0.082 MiB   	kp2, des2 = brief.compute(img2, kp2)
+    22   52.375 MiB    0.414 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to FAST_brief.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 1.38552 s
+File: FAST_brief.py
+Function: FAST_brief at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def FAST_brief(img):
+     9         1      16821.0  16821.0      1.2  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        256.0    256.0      0.0  	fast = cv2.FastFeatureDetector_create(threshold=20)
+    12         1        189.0    189.0      0.0  	brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()
+    13         1        205.0    205.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1      12010.0  12010.0      0.9  	kp1 = fast.detect(img1,None)
+    16         1      70094.0  70094.0      5.1  	kp1, des1 = brief.compute(img1, kp1)
+    17                                           
+    18         1      80738.0  80738.0      5.8  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           
+    20         1      50188.0  50188.0      3.6  	kp2 = fast.detect(img2,None)
+    21         1     338913.0 338913.0     24.5  	kp2, des2 = brief.compute(img2, kp2)
+    22         1     816105.0 816105.0     58.9  	matches = bf.match(des1,des2)
+

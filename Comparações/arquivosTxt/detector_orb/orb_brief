@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Orb-Brief1    146    111       76.03%        img1.jpg
- Orb-Brief10    166    149       89.76%        img10.jpg
- Orb-Brief2    220    204       92.73%        img2.jpg
- Orb-Brief3    204    190       93.14%        img3.jpg
- Orb-Brief4    160    140       87.50%        img4.jpg
- Orb-Brief5    184    171       92.93%        img5.jpg
- Orb-Brief6    208    187       89.90%        img6.jpg
- Orb-Brief7    203    168       82.76%        img7.jpg
- Orb-Brief8    202    190       94.06%        img8.jpg
- Orb-Brief9    205    192       93.66%        img9.jpg
+ Orb-Brief1    150    146       97.33%        img1.jpg
+ Orb-Brief10    150    146       97.33%        img10.jpg
+ Orb-Brief11    150    147       98.00%        img11.jpg
+ Orb-Brief12    150    139       92.67%        img12.jpg
+ Orb-Brief13    150    134       89.33%        img13.jpg
+ Orb-Brief2    150    141       94.00%        img2.jpg
+ Orb-Brief3    150    148       98.67%        img3.jpg
+ Orb-Brief4    150    141       94.00%        img4.jpg
+ Orb-Brief5    150    147       98.00%        img5.jpg
+ Orb-Brief6    150    144       96.00%        img6.jpg
+ Orb-Brief7    150    147       98.00%        img7.jpg
+ Orb-Brief8    150    134       89.33%        img8.jpg
+ Orb-Brief9    150    131       87.33%        img9.jpg
 
 
-Média dos matches:  189.8
-Desvio Padrão dos matches:  23.2499462365
-Média dos corretos:  170.2
-Desvio Padrão dos corretos:  27.4874516825
-Porcentagem em relação aos valores médios:  89.6733403583 %
+Média dos matches:  150.0
+Média dos corretos:  141.923076923
+Desvio Padrão dos corretos:  5.59479893722
+Porcentagem em relação aos valores médios:  94.6153846154 %

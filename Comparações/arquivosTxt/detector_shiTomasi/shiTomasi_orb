@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- ShiTomasi-Orb1    34    23       67.65%        img1.jpg
- ShiTomasi-Orb10    32    23       71.88%        img10.jpg
- ShiTomasi-Orb2    34    28       82.35%        img2.jpg
- ShiTomasi-Orb3    38    30       78.95%        img3.jpg
- ShiTomasi-Orb4    33    26       78.79%        img4.jpg
- ShiTomasi-Orb5    34    28       82.35%        img5.jpg
- ShiTomasi-Orb6    36    30       83.33%        img6.jpg
- ShiTomasi-Orb7    30    27       90.00%        img7.jpg
- ShiTomasi-Orb8    34    21       61.76%        img8.jpg
- ShiTomasi-Orb9    34    28       82.35%        img9.jpg
+ ShiTomasi-Orb1    38    24       63.16%        img1.jpg
+ ShiTomasi-Orb10    39    27       69.23%        img10.jpg
+ ShiTomasi-Orb11    32    20       62.50%        img11.jpg
+ ShiTomasi-Orb12    35    26       74.29%        img12.jpg
+ ShiTomasi-Orb13    34    26       76.47%        img13.jpg
+ ShiTomasi-Orb2    37    25       67.57%        img2.jpg
+ ShiTomasi-Orb3    36    22       61.11%        img3.jpg
+ ShiTomasi-Orb4    35    25       71.43%        img4.jpg
+ ShiTomasi-Orb5    33    27       81.82%        img5.jpg
+ ShiTomasi-Orb6    42    29       69.05%        img6.jpg
+ ShiTomasi-Orb7    38    28       73.68%        img7.jpg
+ ShiTomasi-Orb8    35    21       60.00%        img8.jpg
+ ShiTomasi-Orb9    36    25       69.44%        img9.jpg
 
 
-Média dos matches:  33.9
-Desvio Padrão dos matches:  2.02237484162
-Média dos corretos:  26.4
-Desvio Padrão dos corretos:  2.93938769134
-Porcentagem em relação aos valores médios:  77.8761061947 %
+Média dos matches:  36.1538461538
+Média dos corretos:  25.0
+Desvio Padrão dos corretos:  2.57203899958
+Porcentagem em relação aos valores médios:  69.1489361702 %

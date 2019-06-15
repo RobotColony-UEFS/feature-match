@@ -1,0 +1,50 @@
+[ INFO:0] Initialize OpenCL runtime...
+Filename: ORB_brisk.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   49.102 MiB   49.102 MiB   @profile
+     8                             def ORB_brisk(img):
+     9   50.070 MiB    0.969 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   50.133 MiB    0.062 MiB   	orb = cv2.ORB_create()
+    12   95.379 MiB   45.246 MiB   	brisk = cv2.BRISK_create()
+    13   95.438 MiB    0.059 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   96.336 MiB    0.898 MiB   	kp1 = orb.detect(img1, None)
+    16   96.793 MiB    0.457 MiB   	kp1, des1 = brisk.compute(img1, kp1)
+    17                             
+    18   97.375 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             	
+    20   97.387 MiB    0.012 MiB   	kp2 = orb.detect(img2, None)
+    21   97.406 MiB    0.020 MiB   	kp2, des2 = brisk.compute(img2, kp2)
+    22   97.641 MiB    0.234 MiB   	matches = bf.match(des1, des2)
+
+
+[ INFO:0] Initialize OpenCL runtime...
+Wrote profile results to ORB_brisk.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 7.39652 s
+File: ORB_brisk.py
+Function: ORB_brisk at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def ORB_brisk(img):
+     9         1      18556.0  18556.0      0.3  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        210.0    210.0      0.0  	orb = cv2.ORB_create()
+    12         1    6388111.0 6388111.0     86.4  	brisk = cv2.BRISK_create()
+    13         1        253.0    253.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1      91024.0  91024.0      1.2  	kp1 = orb.detect(img1, None)
+    16         1      84963.0  84963.0      1.1  	kp1, des1 = brisk.compute(img1, kp1)
+    17                                           
+    18         1      79341.0  79341.0      1.1  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           	
+    20         1     405862.0 405862.0      5.5  	kp2 = orb.detect(img2, None)
+    21         1     225081.0 225081.0      3.0  	kp2, des2 = brisk.compute(img2, kp2)
+    22         1     103122.0 103122.0      1.4  	matches = bf.match(des1, des2)
+

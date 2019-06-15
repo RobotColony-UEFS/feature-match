@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Fast-Brisk1    357    122       34.17%        img1.jpg
- Fast-Brisk10    358    166       46.37%        img10.jpg
- Fast-Brisk2    344    301       87.50%        img2.jpg
- Fast-Brisk3    360    224       62.22%        img3.jpg
- Fast-Brisk4    345    167       48.41%        img4.jpg
- Fast-Brisk5    341    247       72.43%        img5.jpg
- Fast-Brisk6    359    163       45.40%        img6.jpg
- Fast-Brisk7    353    200       56.66%        img7.jpg
- Fast-Brisk8    363    138       38.02%        img8.jpg
- Fast-Brisk9    356    223       62.64%        img9.jpg
+ Fast-Brisk1    150    62       41.33%        img1.jpg
+ Fast-Brisk10    150    113       75.33%        img10.jpg
+ Fast-Brisk11    150    101       67.33%        img11.jpg
+ Fast-Brisk12    150    89       59.33%        img12.jpg
+ Fast-Brisk13    150    95       63.33%        img13.jpg
+ Fast-Brisk2    150    119       79.33%        img2.jpg
+ Fast-Brisk3    150    121       80.67%        img3.jpg
+ Fast-Brisk4    150    85       56.67%        img4.jpg
+ Fast-Brisk5    150    118       78.67%        img5.jpg
+ Fast-Brisk6    150    106       70.67%        img6.jpg
+ Fast-Brisk7    150    96       64.00%        img7.jpg
+ Fast-Brisk8    150    60       40.00%        img8.jpg
+ Fast-Brisk9    150    74       49.33%        img9.jpg
 
 
-Média dos matches:  353.6
-Desvio Padrão dos matches:  7.21387551875
-Média dos corretos:  195.1
-Desvio Padrão dos corretos:  51.7850364488
-Porcentagem em relação aos valores médios:  55.1753393665 %
+Média dos matches:  150.0
+Média dos corretos:  95.3076923077
+Desvio Padrão dos corretos:  19.9089644107
+Porcentagem em relação aos valores médios:  63.5384615385 %

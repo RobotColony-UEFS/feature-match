@@ -1,0 +1,50 @@
+[ INFO:0] Initialize OpenCL runtime...
+Filename: SURF_orb.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.852 MiB   48.852 MiB   @profile
+     8                             def SURF_orb(img):
+     9   49.730 MiB    0.879 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.793 MiB    0.062 MiB   	surf = cv2.xfeatures2d.SURF_create()
+    12   49.910 MiB    0.117 MiB   	orb = cv2.ORB_create()
+    13   49.973 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   51.078 MiB    1.105 MiB   	kp1 = surf.detect(img1,None)
+    16   51.684 MiB    0.605 MiB   	kp1, des1 = orb.compute(img1, kp1)
+    17                             
+    18   52.266 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             
+    20   52.367 MiB    0.102 MiB   	kp2 = surf.detect(img2,None)
+    21   52.520 MiB    0.152 MiB   	kp2, des2 = orb.compute(img2, kp2)
+    22   52.801 MiB    0.281 MiB   	matches = bf.match(des1,des2)
+
+
+[ INFO:0] Initialize OpenCL runtime...
+Wrote profile results to SURF_orb.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 7.02974 s
+File: SURF_orb.py
+Function: SURF_orb at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def SURF_orb(img):
+     9         1      17234.0  17234.0      0.2  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        228.0    228.0      0.0  	surf = cv2.xfeatures2d.SURF_create()
+    12         1        273.0    273.0      0.0  	orb = cv2.ORB_create()
+    13         1        228.0    228.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1     692398.0 692398.0      9.8  	kp1 = surf.detect(img1,None)
+    16         1      80976.0  80976.0      1.2  	kp1, des1 = orb.compute(img1, kp1)
+    17                                           
+    18         1      77036.0  77036.0      1.1  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           
+    20         1    4799301.0 4799301.0     68.3  	kp2 = surf.detect(img2,None)
+    21         1     531361.0 531361.0      7.6  	kp2, des2 = orb.compute(img2, kp2)
+    22         1     830710.0 830710.0     11.8  	matches = bf.match(des1,des2)
+

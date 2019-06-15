@@ -40,7 +40,7 @@ bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 kp1 = surf.detect(img1,None)
 kp1, des1 = brisk.compute(img1, kp1)
 
-while(quantidadeImagens<=10):
+while(quantidadeImagens<=13):
 	acertos = 0
 	img22 = cv2.imread("../../imgTeste/img"+str(quantidadeImagens)+".jpg", 0)
 	altura2 = img22.shape[0]
@@ -51,9 +51,10 @@ while(quantidadeImagens<=10):
 	kp2 = surf.detect(img2,None)
 	kp2, des2 = brisk.compute(img2, kp2)
 
-	matches = bf.match(des1,des2)
-	matches = sorted(matches, key = lambda x:x.distance)
-
+	mat = bf.match(des1,des2)
+	mat = sorted(mat, key = lambda x:x.distance)
+	matches = mat[0:150]
+	
 	with open("../../imgTeste/img"+str(quantidadeImagens)+".txt",'r') as f:
 		texto=f.readlines()
 	posicao_x= np.float_(texto[0:4])

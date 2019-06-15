@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Harris-Freak1    27    12       44.44%        img1.jpg
- Harris-Freak10    27    14       51.85%        img10.jpg
- Harris-Freak2    27    24       88.89%        img2.jpg
- Harris-Freak3    27    16       59.26%        img3.jpg
- Harris-Freak4    27    11       40.74%        img4.jpg
- Harris-Freak5    27    18       66.67%        img5.jpg
- Harris-Freak6    27    14       51.85%        img6.jpg
- Harris-Freak7    27    13       48.15%        img7.jpg
- Harris-Freak8    27    9       33.33%        img8.jpg
- Harris-Freak9    27    16       59.26%        img9.jpg
+ Harris-Freak1    25    11       44.00%        img1.jpg
+ Harris-Freak10    22    14       63.64%        img10.jpg
+ Harris-Freak11    23    18       78.26%        img11.jpg
+ Harris-Freak12    25    20       80.00%        img12.jpg
+ Harris-Freak13    24    20       83.33%        img13.jpg
+ Harris-Freak2    25    13       52.00%        img2.jpg
+ Harris-Freak3    25    14       56.00%        img3.jpg
+ Harris-Freak4    25    17       68.00%        img4.jpg
+ Harris-Freak5    25    12       48.00%        img5.jpg
+ Harris-Freak6    25    14       56.00%        img6.jpg
+ Harris-Freak7    25    19       76.00%        img7.jpg
+ Harris-Freak8    25    15       60.00%        img8.jpg
+ Harris-Freak9    25    14       56.00%        img9.jpg
 
 
-Média dos matches:  27.0
-Desvio Padrão dos matches:  0.0
-Média dos corretos:  14.7
-Desvio Padrão dos corretos:  3.97617907041
-Porcentagem em relação aos valores médios:  54.4444444444 %
+Média dos matches:  24.5384615385
+Média dos corretos:  15.4615384615
+Desvio Padrão dos corretos:  2.89868364329
+Porcentagem em relação aos valores médios:  63.0094043887 %

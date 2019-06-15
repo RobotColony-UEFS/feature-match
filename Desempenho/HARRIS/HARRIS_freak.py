@@ -1,9 +1,10 @@
 #coding: utf-8
 import cv2
 import numpy as np
+import sys
 
 @profile
-def HARRIS_freak():	
+def HARRIS_freak(img):	
 	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
 	freak = cv2.xfeatures2d.FREAK_create()
 
@@ -24,7 +25,7 @@ def HARRIS_freak():
 
 	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 
-	img2 = cv2.imread("../imgTeste/img1.jpg", 0)	
+	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
 	imagem2 = np.float32(img2)
 	dst2 = cv2.cornerHarris(imagem2,2,3,0.04)
 	dst2 = cv2.dilate(dst2,None)
@@ -43,4 +44,5 @@ def HARRIS_freak():
 	matches = bf.match(des1,des2)
 
 if __name__ == '__main__':
-	HARRIS_freak()
+	imgNumero = sys.argv[1]
+	HARRIS_freak(imgNumero)

@@ -1,0 +1,48 @@
+Filename: STAR_sift.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.988 MiB   48.988 MiB   @profile
+     8                             def STAR_sift(img):
+     9   49.914 MiB    0.926 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   50.035 MiB    0.121 MiB   	star = cv2.xfeatures2d.StarDetector_create()
+    12   50.035 MiB    0.000 MiB   	sift = cv2.xfeatures2d.SIFT_create()
+    13   50.098 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+    14                             		
+    15   50.449 MiB    0.352 MiB   	kp1 = star.detect(img1,None)
+    16   55.074 MiB    4.625 MiB   	kp1, des1 = sift.compute(img1, kp1)
+    17                             
+    18   55.074 MiB    0.000 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             	
+    20   55.082 MiB    0.008 MiB   	kp2 = star.detect(img2,None)
+    21   55.090 MiB    0.008 MiB   	kp2, des2 = sift.compute(img2, kp2)
+    22   55.445 MiB    0.355 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to STAR_sift.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 11.6239 s
+File: STAR_sift.py
+Function: STAR_sift at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def STAR_sift(img):
+     9         1      17357.0  17357.0      0.1  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        325.0    325.0      0.0  	star = cv2.xfeatures2d.StarDetector_create()
+    12         1         74.0     74.0      0.0  	sift = cv2.xfeatures2d.SIFT_create()
+    13         1        224.0    224.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+    14                                           		
+    15         1     130196.0 130196.0      1.1  	kp1 = star.detect(img1,None)
+    16         1     932172.0 932172.0      8.0  	kp1, des1 = sift.compute(img1, kp1)
+    17                                           
+    18         1      74926.0  74926.0      0.6  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           	
+    20         1    3269792.0 3269792.0     28.1  	kp2 = star.detect(img2,None)
+    21         1    7146143.0 7146143.0     61.5  	kp2, des2 = sift.compute(img2, kp2)
+    22         1      52699.0  52699.0      0.5  	matches = bf.match(des1,des2)
+

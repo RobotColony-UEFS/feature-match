@@ -52,7 +52,7 @@ kp1, des1 = brief.compute(img1, kp1)
 
 bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 quantidadeImagens = 1
-while(quantidadeImagens<=10):
+while(quantidadeImagens<=13):
 	#PARA IMAGEM 2
 	acertos = 0
 	img22 = cv2.imread("../../imgTeste/img"+str(quantidadeImagens)+".jpg", 0)	
@@ -74,9 +74,9 @@ while(quantidadeImagens<=10):
 	kp2 = cv2.KeyPoint_convert(matriz2)
 	kp2, des2 = brief.compute(img2, kp2)
 
-	matches = bf.match(des1,des2)
-	matches = sorted(matches, key = lambda x:x.distance)
-	
+	mat = bf.match(des1,des2)
+	mat = sorted(mat, key = lambda x:x.distance)
+	matches = mat[0:150]
 	with open("../../imgTeste/img"+str(quantidadeImagens)+".txt",'r') as f:
 		texto=f.readlines()
 	posicao_x= np.float_(texto[0:4])

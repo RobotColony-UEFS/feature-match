@@ -1,0 +1,48 @@
+Filename: FAST_orb.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.582 MiB   48.582 MiB   @profile
+     8                             def FAST_orb(img):
+     9   49.277 MiB    0.695 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.340 MiB    0.062 MiB   	fast = cv2.FastFeatureDetector_create(threshold=25)
+    12   49.402 MiB    0.062 MiB   	orb = cv2.ORB_create()
+    13   49.523 MiB    0.121 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   49.797 MiB    0.273 MiB   	kp1 = fast.detect(img1,None)
+    16   50.355 MiB    0.559 MiB   	kp1, des1 = orb.compute(img1, kp1)
+    17                             
+    18   50.938 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             
+    20   50.977 MiB    0.039 MiB   	kp2 = fast.detect(img2,None)
+    21   51.035 MiB    0.059 MiB   	kp2, des2 = orb.compute(img2, kp2)
+    22   51.488 MiB    0.453 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to FAST_orb.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 0.973788 s
+File: FAST_orb.py
+Function: FAST_orb at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def FAST_orb(img):
+     9         1      17202.0  17202.0      1.8  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        258.0    258.0      0.0  	fast = cv2.FastFeatureDetector_create(threshold=25)
+    12         1        176.0    176.0      0.0  	orb = cv2.ORB_create()
+    13         1        306.0    306.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1      11015.0  11015.0      1.1  	kp1 = fast.detect(img1,None)
+    16         1      32270.0  32270.0      3.3  	kp1, des1 = orb.compute(img1, kp1)
+    17                                           
+    18         1      83362.0  83362.0      8.6  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           
+    20         1      47548.0  47548.0      4.9  	kp2 = fast.detect(img2,None)
+    21         1     195344.0 195344.0     20.1  	kp2, des2 = orb.compute(img2, kp2)
+    22         1     586307.0 586307.0     60.2  	matches = bf.match(des1,des2)
+

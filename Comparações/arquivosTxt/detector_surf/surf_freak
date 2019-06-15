@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Surf-Freak1    133    64       48.12%        img1.jpg
- Surf-Freak10    132    101       76.52%        img10.jpg
- Surf-Freak2    132    121       91.67%        img2.jpg
- Surf-Freak3    133    94       70.68%        img3.jpg
- Surf-Freak4    130    85       65.38%        img4.jpg
- Surf-Freak5    133    95       71.43%        img5.jpg
- Surf-Freak6    133    89       66.92%        img6.jpg
- Surf-Freak7    134    106       79.10%        img7.jpg
- Surf-Freak8    133    78       58.65%        img8.jpg
- Surf-Freak9    133    113       84.96%        img9.jpg
+ Surf-Freak1    150    114       76.00%        img1.jpg
+ Surf-Freak10    150    98       65.33%        img10.jpg
+ Surf-Freak11    150    104       69.33%        img11.jpg
+ Surf-Freak12    150    114       76.00%        img12.jpg
+ Surf-Freak13    150    115       76.67%        img13.jpg
+ Surf-Freak2    150    98       65.33%        img2.jpg
+ Surf-Freak3    150    106       70.67%        img3.jpg
+ Surf-Freak4    150    110       73.33%        img4.jpg
+ Surf-Freak5    150    109       72.67%        img5.jpg
+ Surf-Freak6    150    107       71.33%        img6.jpg
+ Surf-Freak7    150    106       70.67%        img7.jpg
+ Surf-Freak8    150    108       72.00%        img8.jpg
+ Surf-Freak9    150    106       70.67%        img9.jpg
 
 
-Média dos matches:  132.6
-Desvio Padrão dos matches:  1.01980390272
-Média dos corretos:  94.6
-Desvio Padrão dos corretos:  15.9449051424
-Porcentagem em relação aos valores médios:  71.3423831071 %
+Média dos matches:  150.0
+Média dos corretos:  107.307692308
+Desvio Padrão dos corretos:  5.1796141137
+Porcentagem em relação aos valores médios:  71.5384615385 %

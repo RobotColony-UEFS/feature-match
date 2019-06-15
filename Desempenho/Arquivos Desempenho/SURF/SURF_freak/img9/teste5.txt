@@ -1,0 +1,50 @@
+[ INFO:0] Initialize OpenCL runtime...
+Filename: SURF_freak.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.570 MiB   48.570 MiB   @profile
+     8                             def SURF_freak(img):
+     9   49.375 MiB    0.805 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.434 MiB    0.059 MiB   	surf = cv2.xfeatures2d.SURF_create()
+    12   49.590 MiB    0.156 MiB   	freak = cv2.xfeatures2d.FREAK_create()
+    13   49.652 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             		
+    15   50.586 MiB    0.934 MiB   	kp1 = surf.detect(img1,None)
+    16   59.062 MiB    8.477 MiB   	kp1, des1 = freak.compute(img1, kp1)
+    17                             
+    18   59.645 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             
+    20   59.828 MiB    0.184 MiB   	kp2 = surf.detect(img2,None)
+    21   59.891 MiB    0.062 MiB   	kp2, des2 = freak.compute(img2, kp2)
+    22   60.188 MiB    0.297 MiB   	matches = bf.match(des1,des2)
+
+
+[ INFO:0] Initialize OpenCL runtime...
+Wrote profile results to SURF_freak.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 7.08251 s
+File: SURF_freak.py
+Function: SURF_freak at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def SURF_freak(img):
+     9         1      17697.0  17697.0      0.2  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        303.0    303.0      0.0  	surf = cv2.xfeatures2d.SURF_create()
+    12         1        257.0    257.0      0.0  	freak = cv2.xfeatures2d.FREAK_create()
+    13         1        228.0    228.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           		
+    15         1     692665.0 692665.0      9.8  	kp1 = surf.detect(img1,None)
+    16         1     853626.0 853626.0     12.1  	kp1, des1 = freak.compute(img1, kp1)
+    17                                           
+    18         1      73859.0  73859.0      1.0  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           
+    20         1    4822439.0 4822439.0     68.1  	kp2 = surf.detect(img2,None)
+    21         1     325447.0 325447.0      4.6  	kp2, des2 = freak.compute(img2, kp2)
+    22         1     295992.0 295992.0      4.2  	matches = bf.match(des1,des2)
+

@@ -1,0 +1,50 @@
+[ INFO:0] Initialize OpenCL runtime...
+Filename: SURF_sift.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   49.039 MiB   49.039 MiB   @profile
+     8                             def SURF_sift(img):
+     9   49.945 MiB    0.906 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   50.070 MiB    0.125 MiB   	surf = cv2.xfeatures2d.SURF_create()
+    12   50.070 MiB    0.000 MiB   	sift = cv2.xfeatures2d.SIFT_create()
+    13   50.133 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+    14                             
+    15   51.160 MiB    1.027 MiB   	kp1 = surf.detect(img1,None)
+    16   57.406 MiB    6.246 MiB   	kp1, des1 = sift.compute(img1, kp1)
+    17                             
+    18   57.406 MiB    0.000 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             	
+    20   57.094 MiB    0.000 MiB   	kp2 = surf.detect(img2,None)
+    21   58.742 MiB    1.648 MiB   	kp2, des2 = sift.compute(img2, kp2)
+    22   59.074 MiB    0.332 MiB   	matches = bf.match(des1,des2)
+
+
+[ INFO:0] Initialize OpenCL runtime...
+Wrote profile results to SURF_sift.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 109.56 s
+File: SURF_sift.py
+Function: SURF_sift at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def SURF_sift(img):
+     9         1      17791.0  17791.0      0.0  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        311.0    311.0      0.0  	surf = cv2.xfeatures2d.SURF_create()
+    12         1         74.0     74.0      0.0  	sift = cv2.xfeatures2d.SIFT_create()
+    13         1        226.0    226.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+    14                                           
+    15         1     694381.0 694381.0      0.6  	kp1 = surf.detect(img1,None)
+    16         1   18008990.0 18008990.0     16.4  	kp1, des1 = sift.compute(img1, kp1)
+    17                                           
+    18         1      70344.0  70344.0      0.1  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           	
+    20         1    4757167.0 4757167.0      4.3  	kp2 = surf.detect(img2,None)
+    21         1   78305895.0 78305895.0     71.5  	kp2, des2 = sift.compute(img2, kp2)
+    22         1    7704835.0 7704835.0      7.0  	matches = bf.match(des1,des2)
+

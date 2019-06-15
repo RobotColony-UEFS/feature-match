@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Surf-Brisk1    241    103       42.74%        img1.jpg
- Surf-Brisk10    239    135       56.49%        img10.jpg
- Surf-Brisk2    242    207       85.54%        img2.jpg
- Surf-Brisk3    240    169       70.42%        img3.jpg
- Surf-Brisk4    239    133       55.65%        img4.jpg
- Surf-Brisk5    236    159       67.37%        img5.jpg
- Surf-Brisk6    242    150       61.98%        img6.jpg
- Surf-Brisk7    241    163       67.63%        img7.jpg
- Surf-Brisk8    242    113       46.69%        img8.jpg
- Surf-Brisk9    241    160       66.39%        img9.jpg
+ Surf-Brisk1    150    117       78.00%        img1.jpg
+ Surf-Brisk10    150    104       69.33%        img10.jpg
+ Surf-Brisk11    150    108       72.00%        img11.jpg
+ Surf-Brisk12    150    112       74.67%        img12.jpg
+ Surf-Brisk13    150    120       80.00%        img13.jpg
+ Surf-Brisk2    150    116       77.33%        img2.jpg
+ Surf-Brisk3    150    119       79.33%        img3.jpg
+ Surf-Brisk4    150    120       80.00%        img4.jpg
+ Surf-Brisk5    150    123       82.00%        img5.jpg
+ Surf-Brisk6    150    118       78.67%        img6.jpg
+ Surf-Brisk7    150    122       81.33%        img7.jpg
+ Surf-Brisk8    150    120       80.00%        img8.jpg
+ Surf-Brisk9    150    123       82.00%        img9.jpg
 
 
-Média dos matches:  240.3
-Desvio Padrão dos matches:  1.79164728672
-Média dos corretos:  149.2
-Desvio Padrão dos corretos:  28.3647668772
-Porcentagem em relação aos valores médios:  62.0890553475 %
+Média dos matches:  150.0
+Média dos corretos:  117.076923077
+Desvio Padrão dos corretos:  5.58103296837
+Porcentagem em relação aos valores médios:  78.0512820513 %

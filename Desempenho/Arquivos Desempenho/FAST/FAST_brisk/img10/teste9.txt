@@ -1,0 +1,48 @@
+Filename: FAST_brisk.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.781 MiB   48.781 MiB   @profile
+     8                             def FAST_brisk(img):
+     9   49.664 MiB    0.883 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                             
+    11   49.727 MiB    0.062 MiB   	fast = cv2.FastFeatureDetector_create(threshold=25)
+    12   95.020 MiB   45.293 MiB   	brisk = cv2.BRISK_create()
+    13   95.078 MiB    0.059 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                             
+    15   95.359 MiB    0.281 MiB   	kp1 = fast.detect(img1,None)
+    16   95.906 MiB    0.547 MiB   	kp1, des1 = brisk.compute(img1, kp1)
+    17                             
+    18   96.488 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                             	
+    20   96.516 MiB    0.027 MiB   	kp2 = fast.detect(img2,None)
+    21   96.566 MiB    0.051 MiB   	kp2, des2 = brisk.compute(img2, kp2)
+    22   96.926 MiB    0.359 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to FAST_brisk.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 7.97481 s
+File: FAST_brisk.py
+Function: FAST_brisk at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def FAST_brisk(img):
+     9         1      18715.0  18715.0      0.2  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10                                           
+    11         1        341.0    341.0      0.0  	fast = cv2.FastFeatureDetector_create(threshold=25)
+    12         1    6313081.0 6313081.0     79.2  	brisk = cv2.BRISK_create()
+    13         1        252.0    252.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    14                                           
+    15         1      11343.0  11343.0      0.1  	kp1 = fast.detect(img1,None)
+    16         1     144470.0 144470.0      1.8  	kp1, des1 = brisk.compute(img1, kp1)
+    17                                           
+    18         1      77048.0  77048.0      1.0  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    19                                           	
+    20         1      43301.0  43301.0      0.5  	kp2 = fast.detect(img2,None)
+    21         1     329212.0 329212.0      4.1  	kp2, des2 = brisk.compute(img2, kp2)
+    22         1    1037051.0 1037051.0     13.0  	matches = bf.match(des1,des2)
+

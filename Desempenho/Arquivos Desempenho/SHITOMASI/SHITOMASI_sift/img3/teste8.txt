@@ -1,0 +1,52 @@
+Filename: SHITOMASI_sift.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   49.164 MiB   49.164 MiB   @profile
+     8                             def SHITOMASI_sift(img):
+     9   50.098 MiB    0.934 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10   51.273 MiB    1.176 MiB   	corners11 = cv2.goodFeaturesToTrack(img1, 100, 0.01, 10)
+    11   51.273 MiB    0.000 MiB   	corners1 = np.int0(corners11)
+    12   51.395 MiB    0.121 MiB   	kp1 = cv2.KeyPoint_convert(corners1)
+    13                             
+    14   51.512 MiB    0.117 MiB   	sift = cv2.xfeatures2d.SIFT_create()
+    15   51.574 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+    16   55.551 MiB    3.977 MiB   	kp1, des1 = sift.compute(img1, kp1)
+    17   55.551 MiB    0.000 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    18                             	
+    19   55.551 MiB    0.000 MiB   	corners22 = cv2.goodFeaturesToTrack(img2, 100, 0.01, 10)
+    20   55.551 MiB    0.000 MiB   	corners2 = np.int0(corners22)
+    21   55.551 MiB    0.000 MiB   	kp2 = cv2.KeyPoint_convert(corners2)
+    22   55.555 MiB    0.004 MiB   	kp2, des2 = sift.compute(img2, kp2)
+    23                             
+    24   55.852 MiB    0.297 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to SHITOMASI_sift.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 3.62592 s
+File: SHITOMASI_sift.py
+Function: SHITOMASI_sift at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def SHITOMASI_sift(img):
+     9         1      17405.0  17405.0      0.5  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10         1     119665.0 119665.0      3.3  	corners11 = cv2.goodFeaturesToTrack(img1, 100, 0.01, 10)
+    11         1        214.0    214.0      0.0  	corners1 = np.int0(corners11)
+    12         1       3935.0   3935.0      0.1  	kp1 = cv2.KeyPoint_convert(corners1)
+    13                                           
+    14         1        315.0    315.0      0.0  	sift = cv2.xfeatures2d.SIFT_create()
+    15         1        330.0    330.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+    16         1     240378.0 240378.0      6.6  	kp1, des1 = sift.compute(img1, kp1)
+    17         1      76152.0  76152.0      2.1  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    18                                           	
+    19         1     938484.0 938484.0     25.9  	corners22 = cv2.goodFeaturesToTrack(img2, 100, 0.01, 10)
+    20         1        221.0    221.0      0.0  	corners2 = np.int0(corners22)
+    21         1       3927.0   3927.0      0.1  	kp2 = cv2.KeyPoint_convert(corners2)
+    22         1    2187796.0 2187796.0     60.3  	kp2, des2 = sift.compute(img2, kp2)
+    23                                           
+    24         1      37103.0  37103.0      1.0  	matches = bf.match(des1,des2)
+

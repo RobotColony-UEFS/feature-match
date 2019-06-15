@@ -6,10 +6,10 @@ import mysql.connector
 import math
 
 mydb = mysql.connector.connect(
-  host="localhost",
-  user="descritores",
-  passwd="12345678",
-  database="referencias"
+   host="localhost",
+   user="descritores",
+   passwd="12345678",
+   database="referencias"
 )
 
 
@@ -33,14 +33,14 @@ altura = img11.shape[0]
 largura = img11.shape[1]
 img1 = cv2.resize(img11, (int(largura*0.4), int(altura*0.4)))
 orb = cv2.ORB_create()
-freak = cv2.xfeatures2d.FREAK_create()
+freak = cv2.xfeatures2d.FREAK_create(scaleNormalized = False)
 bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 quantidadeImagens = 1
 
 kp1 = orb.detect(img1, None)
 kp1, des1 = freak.compute(img1, kp1)
 
-while(quantidadeImagens<=10):
+while(quantidadeImagens<=13):
 	acertos = 0
 	img22 = cv2.imread("../../imgTeste/img"+str(quantidadeImagens)+".jpg", 0)
 	altura2 = img22.shape[0]
@@ -50,8 +50,10 @@ while(quantidadeImagens<=10):
 	kp2 = orb.detect(img2, None)	
 	kp2, des2 = freak.compute(img2, kp2)
 	
-	matches = bf.match(des1, des2)
-	matches = sorted(matches, key = lambda x:x.distance)
+	mat = bf.match(des1, des2)
+	mat = sorted(mat, key = lambda x:x.distance)
+	matches = mat[0:150]
+
 	with open("../../imgTeste/img"+str(quantidadeImagens)+".txt",'r') as f:
 		texto=f.readlines()
 	posicao_x= np.float_(texto[0:4])
@@ -84,11 +86,13 @@ while(quantidadeImagens<=10):
 	mycursor.execute(sql, valor)
 	mydb.commit()
 	print(len(matches), acertos)
+	print("img"+str(quantidadeImagens), len(matches), acertos)
 	quantidadeImagens+=1
 
 media_matches, desvio_matches = desvio(vet_matches)
 media_corretos, desvio_corretos = desvio(vet_corretos)
 porcentagem  = (media_corretos/media_matches)*100
+
 sql2 = "INSERT INTO medias_desvios(Nome, MediaMatches, DesvioMatches, MediaCorretos, DesvioCorretos, Porcentagem) VALUES (%s, %s, %s, %s, %s, %s)"
 valor2 = ("orb_freak", media_matches, desvio_matches, media_corretos, desvio_corretos, porcentagem)
 mycursor.execute(sql2, valor2)

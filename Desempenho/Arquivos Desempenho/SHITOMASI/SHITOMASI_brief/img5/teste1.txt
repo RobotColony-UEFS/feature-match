@@ -1,0 +1,52 @@
+Filename: SHITOMASI_brief.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     7   48.582 MiB   48.582 MiB   @profile
+     8                             def SHITOMASI_brief(img):
+     9   49.488 MiB    0.906 MiB   	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10   50.758 MiB    1.270 MiB   	corners11 = cv2.goodFeaturesToTrack(img1, 100, 0.01, 10)
+    11   50.758 MiB    0.000 MiB   	corners1 = np.int0(corners11)
+    12   50.824 MiB    0.066 MiB   	kp1 = cv2.KeyPoint_convert(corners1)
+    13                             
+    14   50.945 MiB    0.121 MiB   	brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()
+    15   51.008 MiB    0.062 MiB   	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    16   51.562 MiB    0.555 MiB   	kp1, des1 = brief.compute(img1, kp1)
+    17   52.145 MiB    0.582 MiB   	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    18                             	
+    19   52.199 MiB    0.055 MiB   	corners22 = cv2.goodFeaturesToTrack(img2, 100, 0.01, 10)
+    20   52.199 MiB    0.000 MiB   	corners2 = np.int0(corners22)
+    21   52.199 MiB    0.000 MiB   	kp2 = cv2.KeyPoint_convert(corners2)
+    22   52.203 MiB    0.004 MiB   	kp2, des2 = brief.compute(img2, kp2)
+    23                             
+    24   52.539 MiB    0.336 MiB   	matches = bf.match(des1,des2)
+
+
+Wrote profile results to SHITOMASI_brief.py.lprof
+Timer unit: 1e-06 s
+
+Total time: 1.24021 s
+File: SHITOMASI_brief.py
+Function: SHITOMASI_brief at line 7
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     7                                           @profile
+     8                                           def SHITOMASI_brief(img):
+     9         1      18064.0  18064.0      1.5  	img1 = cv2.imread("../imgReferencia/img00.jpg", 0)
+    10         1     119389.0 119389.0      9.6  	corners11 = cv2.goodFeaturesToTrack(img1, 100, 0.01, 10)
+    11         1        223.0    223.0      0.0  	corners1 = np.int0(corners11)
+    12         1       4156.0   4156.0      0.3  	kp1 = cv2.KeyPoint_convert(corners1)
+    13                                           
+    14         1        303.0    303.0      0.0  	brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()
+    15         1        240.0    240.0      0.0  	bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    16         1      13767.0  13767.0      1.1  	kp1, des1 = brief.compute(img1, kp1)
+    17         1      79519.0  79519.0      6.4  	img2 = cv2.imread("../imgTeste/img"+str(img)+".jpg", 0)
+    18                                           	
+    19         1     946415.0 946415.0     76.3  	corners22 = cv2.goodFeaturesToTrack(img2, 100, 0.01, 10)
+    20         1        231.0    231.0      0.0  	corners2 = np.int0(corners22)
+    21         1       3839.0   3839.0      0.3  	kp2 = cv2.KeyPoint_convert(corners2)
+    22         1      49617.0  49617.0      4.0  	kp2, des2 = brief.compute(img2, kp2)
+    23                                           
+    24         1       4443.0   4443.0      0.4  	matches = bf.match(des1,des2)
+

@@ -2,20 +2,22 @@
 
   Nome----Matches---Corretos---Porcentagem---ImgAssociada
 
- Fast-Freak1    272    143       52.57%        img1.jpg
- Fast-Freak10    267    162       60.67%        img10.jpg
- Fast-Freak2    269    238       88.48%        img2.jpg
- Fast-Freak3    270    204       75.56%        img3.jpg
- Fast-Freak4    263    176       66.92%        img4.jpg
- Fast-Freak5    265    207       78.11%        img5.jpg
- Fast-Freak6    269    172       63.94%        img6.jpg
- Fast-Freak7    270    174       64.44%        img7.jpg
- Fast-Freak8    274    132       48.18%        img8.jpg
- Fast-Freak9    266    190       71.43%        img9.jpg
+ Fast-Freak1    150    95       63.33%        img1.jpg
+ Fast-Freak10    150    128       85.33%        img10.jpg
+ Fast-Freak11    150    115       76.67%        img11.jpg
+ Fast-Freak12    150    102       68.00%        img12.jpg
+ Fast-Freak13    150    115       76.67%        img13.jpg
+ Fast-Freak2    150    119       79.33%        img2.jpg
+ Fast-Freak3    150    121       80.67%        img3.jpg
+ Fast-Freak4    150    112       74.67%        img4.jpg
+ Fast-Freak5    150    138       92.00%        img5.jpg
+ Fast-Freak6    150    123       82.00%        img6.jpg
+ Fast-Freak7    150    121       80.67%        img7.jpg
+ Fast-Freak8    150    109       72.67%        img8.jpg
+ Fast-Freak9    150    98       65.33%        img9.jpg
 
 
-Média dos matches:  268.5
-Desvio Padrão dos matches:  3.1384709653
-Média dos corretos:  179.8
-Desvio Padrão dos corretos:  29.8020133548
-Porcentagem em relação aos valores médios:  66.9646182495 %
+Média dos matches:  150.0
+Média dos corretos:  115.076923077
+Desvio Padrão dos corretos:  11.612072885
+Porcentagem em relação aos valores médios:  76.7179487179 %
