@@ -1,0 +1,6 @@
+Devido a grande quantidade de imagens geradas durante os testes de precisão para cada junção de cada algoritmo, as mesmas foram disponibilizadas no endereço: 
+
+https://drive.google.com/drive/folders/1oRtAY-4P5U1LySX79lRfVpEIPGysgXwr?usp=sharing
+
+Onde cada par de algoritmo testado contém uma pasta com as respectivas imagens geradas.
+
