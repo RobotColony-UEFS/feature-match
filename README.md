@@ -3,8 +3,8 @@
 Autores:
 
 - Samuel Rebouças de Jesus 
-- Walber Conceição de Jesus Rocha (@rwalber)
-- João Carlos Nunes Bittencourt (@joaocarlos)
+- Walber Conceição de Jesus Rocha ([@rwalber](https://github.com/rwalber))
+- João Carlos Nunes Bittencourt ([@joaocarlos](https://github.com/joaocarlos))
 
 Laboratório de Sistemas Digitais Inteligentes (iDS-L) @ Universidade Federal do Recôncavo da Bahia
 
@@ -20,8 +20,12 @@ O ambiente de prototipação proposto neste trabalho envolveu a utilização da 
 
 ## Trabalhos Publicados
 
+**Análise de Desempenho de Detectores e Descritores de Características Utilizando a Plataforma Computacional Raspberry Pi**. Samuel Rebouças de Jesus. *Trabalho de Conclusão de Curso, Bacharelado em Ciências Exatas e Tecnológicas, UFRB.*
+
+[[PDF](https://www2.ufrb.edu.br/bcet/components/com_chronoforms5/chronoforms/uploads/tcc/20190604195551_2018.2_TCC_Samuel_Reboucas_-_Analise_detec_desc_caracteristicas.pdf	"Análise de Desempenho de Detectores e Descritores de Características Utilizando a Plataforma Computacional Raspberry Pi")]
+
 **Análise de Desempenho de Detectores e Descritores de Características Utilizando a Plataforma Computacional Raspberry Pi**. Walber C. de Jesus Rocha; Samuel Rebouças de Jesus; João Carlos N. Bittencourt. *In: Escola Regional Bahia-Alagoas-Sergipe 2019*. 
 
 [[BibTeX](https://scholar.googleusercontent.com/scholar.bib?q=info:v5U7de2VEwQJ:scholar.google.com/&output=citation&scisdr=CgUwocpBEKvDsoUVudA:AAGBfm0AAAAAXkgQodD5EYx5xaTJ0jw5JITFIn5weeXu&scisig=AAGBfm0AAAAAXkgQoX5zyL7cExI0x-TqJWZDyMkr6019&scisf=4&ct=citation&cd=-1&hl=pt-BR)] [[PDF](https://sol.sbc.org.br/index.php/erbase/article/view/8998/8899)] 
 
-Análise de Precisão de Detectores e Descritores em Imagens. Samuel Rebouças de Jesus; Walber Conceição de Jesus Rocha, João Carlos Nunes Bittencourt. *In: Coleção Sucesso Acadêmico na Graduação da UFRB: Estudos em Ciências Exatas e Tecnológicas* - To be published.
+**Análise de Precisão de Detectores e Descritores em Imagens**. Samuel Rebouças de Jesus; Walber Conceição de Jesus Rocha, João Carlos Nunes Bittencourt. *In: Coleção Sucesso Acadêmico na Graduação da UFRB: Estudos em Ciências Exatas e Tecnológicas* - To be published.
