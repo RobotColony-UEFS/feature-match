@@ -2,7 +2,7 @@
 
 Autores:
 
-- Samuel Rebouças de Jesus 
+- Samuel Rebouças de Jesus ([@samuelreboucas07](https://github.com/samuelreboucas07))
 - Walber Conceição de Jesus Rocha ([@rwalber](https://github.com/rwalber))
 - João Carlos Nunes Bittencourt ([@joaocarlos](https://github.com/joaocarlos))
 
