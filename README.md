@@ -1,5 +1,13 @@
 # Projeto Feature Mach Analysis
 
+Autores:
+
+- Samuel Rebouças de Jesus 
+- Walber Conceição de Jesus Rocha (@rwalber)
+- João Carlos Nunes Bittencourt (@joaocarlos)
+
+Laboratório de Sistemas Digitais Inteligentes (iDS-L) @ Universidade Federal do Recôncavo da Bahia
+
 ## Utilizando Opencv e Python para analizar a eficiência de algoritmo descritores e detectores de características.
 
 Este trabalho consiste em avaliar a precisão e o desempenho dos algoritmos detectores e descritores de características dispondo dos dados referentes a qualidade e a velocidade a qual os pontos de interesse são detectados, descritos e correlacionados, em uma placa Raspberry Pi. 
